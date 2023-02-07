@@ -9,7 +9,6 @@
 
 import SwiftUI
 import MultiSigKit
-import KYFoundationKit
 
 protocol RetryActionable {
 	var retryAction: ((_ force: Bool) async -> Void)? { get set }
@@ -66,7 +65,6 @@ struct AppInsetGroupedList<T:ListEmpty & Hashable>: View, RetryActionable {
 		})
 		.onAppear {
 			UITableView.appearance().sectionFooterHeight = 0
-			UIScrollView.appearance().ky_disbaleButtonTouchDelay = true
 		}
 		.embedInNavigation(/*pathManager*/)
 	}

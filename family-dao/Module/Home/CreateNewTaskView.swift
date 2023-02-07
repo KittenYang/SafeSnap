@@ -11,7 +11,6 @@ import SwiftUI
 import SwiftUIX
 import MultiSigKit
 import Defaults
-import KYFoundationKit
 import SymbolPicker
 
 struct CreateNewTaskView: View, InputCheckable {

@@ -9,7 +9,7 @@
 
 import SwiftUI
 import MultiSigKit
-import KYFoundationKit
+import NetworkKit
 
 struct SpaceCreateHackerView: View {
 	
@@ -69,11 +69,11 @@ struct SpaceCreateHackerView: View {
 				.foregroundColor(.appGreen)
 			}
 			.onAppear {
-				Delay(0.5, {
+				Delay(0.5) {
 					withAnimation {
 						blinkOpacity = 0.0
 					}
-				})
+				}
 			}
 		}
 //		.overlay(alignment: .top) {

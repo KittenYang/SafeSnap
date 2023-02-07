@@ -8,8 +8,6 @@
     
 
 import SwiftUI
-import KYFoundationKit
-
 
 struct ThreeDimensionalRotationEffect: View, Animatable {
 	

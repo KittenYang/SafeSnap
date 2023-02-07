@@ -11,7 +11,7 @@ import SwiftUI
 import MultiSigKit
 import BigInt
 import Defaults
-import KYFoundationKit
+import NetworkKit
 
 @available(iOS 16.0, *)
 struct Stepper : View {
@@ -120,9 +120,9 @@ struct ChangeActionCountView: View {
 			Button("delete".appLocalizable, role: .destructive, action: {
 				alert = false
 				flipped = false
-				Delay(0.3, {
-					Defaults.removeAction([action])
-				})
+                Delay(0.3) {
+                    Defaults.removeAction([action])
+                }
 			})
 		})
     }

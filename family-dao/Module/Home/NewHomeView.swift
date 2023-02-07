@@ -14,8 +14,8 @@ import web3swift
 import Defaults
 import SheetKit
 import BiometricAuthentication
-import KYFoundationKit
 import Introspect
+import NetworkKit
 import BigInt
 
 struct NewHomeView: View {

@@ -9,6 +9,12 @@
 
 import SwiftUI
 
+public func Delay(_ time: TimeInterval, execute work: @escaping @convention(block) () -> Void) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + time) {
+        work()
+    }
+}
+
 public extension SwiftUI.Font {
 	
 	static func rounded(size: CGFloat, weight: Weight? = nil) -> Font {

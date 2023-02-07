@@ -14,7 +14,6 @@ import SwiftUIOverlayContainer
 import BigInt
 import struct LonginusSwiftUI.LGImage
 import SafariServices
-import KYFoundationKit
 import NetworkKit
 import YYCategories
 import LanguageManagerSwiftUI
@@ -38,7 +37,6 @@ struct SettingView: View {
 //	@AppStorage("isDarkMode") var isDarkMode: Bool = false
 	
 	init() {
-		UIScrollView.appearance().ky_disbaleButtonTouchDelay = true
 		UITableView.appearance().sectionFooterHeight = 0
 		UITableView.appearance().sectionHeaderHeight = 0
 		//Use this if NavigationBarTitle is with Large Font

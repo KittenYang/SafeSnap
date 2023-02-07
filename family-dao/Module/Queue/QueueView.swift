@@ -11,7 +11,6 @@ import SwiftUI
 import MultiSigKit
 import web3swift
 import Combine
-import KYFoundationKit
 import Refresh
 
 class LifeMonitor {
