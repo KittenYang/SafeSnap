@@ -1,3 +1,4 @@
+![](https://user-images.githubusercontent.com/5517281/217332125-24213eb7-1964-43f4-87cc-e5f613048045.jpeg)
 # SafeSnap
 An open-sourced Web3 iOS Application which combines Gnosis Safe and Snapshot together makes you easily manage your DAOs on your pocket.
 
