@@ -1,0 +1,326 @@
+/* 
+  Localizable.strings
+  family-dao
+
+  Created by KittenYang on 1/15/23.
+  
+*/
+
+"delete"="删除";
+"copy"="复制";
+"cancel"="关闭";
+"done"="确认";
+"success"="成功";
+
+"page_home"="首页";
+"page_task"="创建任务";
+"page_queue"="队列";
+"page_proposal"="提案";
+"page_setting"="设置";
+
+"release_pull_more"="上拉加载更多";
+"release_pull_more_done"="已加载全部";
+
+"sorted_by_default"="默认排序";
+"sorted_by_name"="按名称排序";
+"multicolored_only"="只看彩色图标";
+"symbol_viewer_title"="选择图形";
+
+"lanlan"="语言";
+"lan_en"="英语";
+"lan_zhs"="简体中文";
+
+"color_scheme_system"="跟随系统";
+"color_scheme_dark"="暗黑";
+"color_scheme_light"="明亮";
+
+"dev_mode_str"="\n开发者模式：开";
+"env_mode_str"="\n环境：DEBUG";
+
+"sending"="正在提交...";
+"send_ok"="发送成功";
+"send_cancel"="用户取消操作";
+"send_fail"="操作失败";
+"send_cancel_sys"="系统取消操作";
+"send_failed_reason"="发生错误";
+"send_failed_reason_unknow"="未知错误";
+
+"face_id_hint"="确保是手机主人发起的操作";
+
+
+"empty_datas"="暂无数据";
+"retry_text"="重试";
+
+
+"settings_c_user"="当前用户";
+"settings_c_team"="当前 DAO";
+"settings_c_team_mems"="当前 DAO 成员：";
+"settings_general"="通用";
+"settings_support"="支持";
+"settings_help"="帮助中心";
+"settings_help_about"="关于";
+
+"settings_switch_t"="切换 DAO";
+"settings_switch_t_u"="用户名";
+"settings_switch_t_u_app"="外观";
+
+"settings_token"="代币地址";
+
+"copy_suss"="复制成功！";
+"token_all_supply"="代币总发行量";
+"token_rest"="剩余代币总数";
+"team_address"="DAO 地址";
+"team_name"="名字";
+"team_peo"="确认人数";
+"mem_nick"="成员备注";
+"mem_add"="添加成员";
+
+"pls_input_name"="请先输入用户名";
+"change_prefix"="修改";
+"input_new_p"="输入新";
+"create_new_u"="新建用户";
+"two_mem"="成员";
+"two_mem_footer"="后续仍然可以添加成员";
+"change_mem_threshold"="修改确认人数";
+"changing_txt"="正在修改...";
+"only_one_txt"="每次只能移除一个用户";
+"mem_remove_err"="无法移除用户";
+"only_add_one"="每次只能增加一个用户";
+"add_mem_can_not_empty"="增加用户不能为空";
+"mem_not_change"="确认人数无变化";
+"post_suss"="提交成功";
+
+"next_s"="下一步";
+"piajnsne"="备注名";
+"azadasdsadsa"="修改成员备注";
+"nextasdasd_s"="修改成功";
+"asdnexfast_s"="完成备注";
+"nsdssefaxt_sas"="切换组织";
+"nsdessssxt_ssss"="取消加载";
+"cccccnext_s"="持续";
+"beginnext_s"="开始于";
+"hellllnext_s"="结束于";
+"newPorinext_s"="提案";
+"next_s_voteee"="投出你的票";
+"next_s_reson"="投票理由（可选）";
+"newPorinext_s_voteee"="投票";
+"newPorinext_sing"="正在投票...";
+"newPorinext_sorry"="抱歉，当前提案你没有投票权！";
+"newPorinext_success"="投票成功";
+"newPorinext_s_men"="投票人";
+"newPorinext_strategy"="策略";
+"newPorinext_ssdad"="投票策略";
+"newPorinext_stasuitmtg"="开始时间";
+"faafasnewPasforinext_s"="结束时间";
+"sdasnewPordassdinext_s"="创建时间";
+"ccmkmznewPorinext_ssadas"="区块";
+"sdnffedfwggPorinext_s"="提案信息";
+"newPorinext_snow"="当前";
+"newPorinext_sresult"="投票结果";
+"newPorinext_sfamilr"="登录DAO";
+"newPorinext_sloginlog"="登录";
+"newPorinext_s_WON"="我所持有";
+"newPorinext_s_recnet"="最近常用";
+
+
+"newPorinext_s_recnet_catee"="按类别";
+"newPorinext_s_recnetfasfsfaf"="请输入事件名";
+"sdasdsanewPorinext_s_recnet_sa"="请输入金额";
+"newsadorindasexd_sda_recnedt"="新建任务";
+"newPorinext_s_recne_sdasdqvfhhkhgt"="事件";
+"nessswPorisnesxt_s_recnesst"="请输入事件名，如扫地";
+"sadsdnewPodassdrinext_s_recnet"="选择背景色";
+"monfgnewPorinext_s_recnet"="金额";
+"newPorsppmvbvucinext_s_dasdrecnet"="请输入金额";
+"nehszwPsvgorissnext_s_rsecnet"="保存为模板";
+"newPorinext_s_reciconslececdenet"="选择图标";
+"newPorinext_s_recnetPPm_ome_Cloe"="请至少选择一个类别或颜色";
+"newPorinext_s_recnet_leiisnx"="类型：";
+"newPorinext_s_recnet_newsdas"="新建";
+"newPorinext_s_recnet_mnasdpasnvsv"="新建分类";
+"newPorinext_s_recnet_sture"="学习";
+"heloasdaoproosnewPorinext_s_recnet"="请输入提案标题";
+"nadewfsafadPogdhdfrinext_s_recnet"="选项";
+"newPorinext_s_recne_add_oinitem"="添加选项";
+"nesfswPorfasinefxt_fs_recnasdet"="新建提案";
+"newPorinext_s_recnet_ttitoot"="标题";
+"newPssssorinfgexaat_s_recnedast"="请输入提案标题";
+"newPorinext_s_recnet_dassf_dasfsasaf"="描述（可选）";
+"helresoansnewPorinext_s_recsssnet"="请输入提案描述";
+"ndddewPorddfdinext_s_recnetfss"="当前没有Space Domain";
+"sadsnefafwPorfasfinext_s_recnet"="请至少填入选项个数：";
+"newPsfasorfasinext_s_recnedssst"="正在发布提案";
+"nesws_donPorinext_s_recnssset"="完成提案";
+
+"new_home_name"="请输入 DAO 名称";
+"new_hofasme_namasdase"="请输入基金名称";
+"newsss_homess_name"="请输入基金符号";
+"ffnew_homdfsfafe_namesasfsf"="请输入成员";
+"new_home_namesssssss"="DAO 名称";
+"nsssew_sshossme_nasssme"="基金名称";
+"new_home_name_suchas"="例如: 小明家的代币";
+"new_hfsamefas_nameasafsf"="基金符号";
+"sssnewss_hssome_nasssme"="例如: ETHC";
+"nessw_hssssome_namsssss"="基金发行量";
+"nessw_hssomssess_name"="例如: 100000";
+"new_home_name_laterss"="后续仍然可以添加成员";
+"new_home_name_chooss"="选择区块链";
+"new_home_namasfsfsafe"="导入 DAO";
+"new_home_name_new_casodiaas"="创建 DAO";
+"nfasfsaew_hfasfsaome_namesadsa"="创建需要等待几分钟，请不要退出 App";
+"sjfanlnewfasfas_hofffme_nassfame"="创建 DAO";
+"nfasfsaew_homfsaf_namesfs"="请输入合法的成员地址";
+"newss_hosfme_namsfsfe"="请输入合法的货币发行量";
+"sssnew_homssse_name"="正在创建 DAO，此过程需要1~2分钟，请不要退出应用";
+"new_fsasfhome_namsdsafae"="确认人数";
+"ssssnew_hosssme_namssse"="每笔交易需要多少个人同意后才可以通过。至少 1 个，至多总成员数";
+"nessssw_home_namssssse"="人中的";
+"new_home_name_perospn"="人";
+
+
+"new_home_name_perospn_lasss"="活跃中";
+"new_home_name_perospn_dadasdsad"="已关闭";
+"new_home_name_perospn_alllll"="全部";
+"new_home_name_perospn_oooooorrr"="转出";
+"new_home_name_perospn_iniinnnin"="转入";
+"new_home_name_perospn_agooooo"="前";
+"new_home_name_perospn_layttttttter"="后";
+"new_home_name_perospn_kethodoamnnort"="Keystore 中无钱包地址";
+"new_home_name_perospn_json_encode_fail"="JSON Encode 失败";
+"new_home_name_perospn_keydajodfailed"="创建 Keystore 失败";
+"dasdsafnewfasf_home_name_perospnsfsaf"="创建助记词失败";
+"fsanew_fhoffme_name_perosdaspn"="认证失败";
+"sfnessw_hvgjyome_jjname_perospn"="生物认证不可用";
+
+"new_home_name_perospn_singkecgis"="单选投票";
+"fassfanew_home_name_perospn_approavir"="赞成投票";
+"fdsafanew_hfasfome_nfasfame_pfaserospn"="排序选择投票";
+"hnjhnew_jhghjome_name_perospn"="二次投票";
+"fafnefwas_home_fasnfamfeas_perospn"="加权投票";
+"new_home_name_perospn_basisciniopda"="基本投票";
+"fasfnew_fashomfase_name_fafsperospn"="自定义";
+"new_home_name_perospn_memememem"="我";
+"new_home_name_perospnasf_huelloe"="确保只有你能看到助记词";
+"newfas_hofasme_nafasfsame_pefasrospn"="确保只有你能查看秘钥";
+
+"new_wallsdnew_home_name_perospn"="新钱包创建中";
+"new_home_name_ssperofasfspnfas"="上链失败";
+"new_home_name_perospnffnotneedofaex"="无需执行";
+"new_home_name_perospn_losodsooweeerr"="❌";
+"new_home_name_perospn_sdlineksis"="✅上链成功!";
+"new_home_name_perospn_locoaspiciiqcont"="等待链上确认";
+"new_home_name_perospn_lininkindds"="正在上链";
+"new_home_name_perospn_eoororooror"="参数错误";
+"trnaootokenbnew_home_name_perospn"="开始转移货币";
+"bkockklksdsanew_home_name_perospn"="参数为空，初始基金转移失败";
+"initaoltnetransonew_home_name_perospn"="开始转移初始货币";
+"newitooencrratenew_home_name_perospn"="创建新Token";
+"sinbgerrornew_home_name_perospn"="签名错误";
+"eororkkknlokanew_home_name_perospn"="缺少入参";
+"new_home_name_perospn_nsojopfajsfa"="当前没有 DAO";
+"dasaf_nonopdasfnew_home_name_perospn"="找不到下一笔nonce";
+
+"crratnewusernew_home_name_perospn"="正在创建用户，请稍等...";
+"fasfasfsn_sdsfsa_sew_home_name_perospn"="退出当前用户后，将只能浏览部分信息";
+"sdfas_ssfsnew_home_name_perospn"="退出";
+"fsffsafsafi_areireosure"="确定退出？";
+"fasfsa_mnNefwnew_home_name_perospn"="新建用户";
+"asf_kklfafasfanew_home_name_perospn"="退出当前用户";
+"ilcoudd_Sfdnew_home_name_perospn"="从 iCloud 恢复";
+"nfasfafew_hofasfasfme_nafame_perospn"="从助记词恢复";
+"fasfnew_hofasfafme_name_perospn"="请输入用户名";
+"are_you_sure_"="确定";
+
+"fasfnew_hofasfafme_name_perospn_fsafsaf"="正在登录用户...";
+"fasfnew_hofaffsafsfafme_fsaname_perospnfsafa"="新建任务";
+"ffasfasfnew_hofsafasfafme_name_perospn"="新建提案";
+"fassssfnew_hosssfasfasffme_name_ffperospn"="新建 DAO";
+"fasfnew_hofssasfassfme_ssname_perssospnss"="新建用户";
+"fasssfnew_hofasfddafmef_name_perosfsafsapn"="新建转移";
+"fasfnew_hofasfafme_name_perospn_exitasss"="确定删除？";
+"ffsasfnew_hofasfafme_name_perospn_sadsf"="待操作";
+"fasffasfsaffnew_h_fasfofasfafme_name_perospn"="排队中";
+"fassssfnew_hofasfasssfme_name_perospfasfsasfn"="本次编号";
+"fasfnhelloleleoeew_hofasfafme_name_perospn"="操作存在分歧，未表态成员可以投票任一一个意见，最先达到目标人数的操作将自动替换其他操作";
+"fasfnew_hofasfafme_name_perosp_kuieoccen"="拒绝";
+"fasfnew_hofasfafme_name_perospndasfasf_dassf"="还剩";
+"fasfnew_hofasfafme_name_perospndasfasf_dassf_lallal"="确认名额";
+"fasfnew_hofasfafme_name_perospn_norteyo_sadnas"="已满足多签，请上链";
+"fasfnew_hofasfafme_name_perospnvovyeee"="同意";
+"fasfnew_hofasfafme_name_perospn_fasfsfsa_vssaf"="投票";
+"ffasfas_link_fasasfnew_hofasfafme_name_perospn"="上链";
+"fasfnew_hofasfafme_name_peros_nonnonnopn"="拒绝本次操作";
+"fasfnew_hofasfafme_name_perosfasfasff_fasmuespn"="转出";
+"ffaasfn_fasfsa_asfsaew_hofasfafme_name_perospn"="创建钱包";
+"fafsasffnasf_fasf_fasew_hofasfafme_name_perospn"="合约交互";
+"fdafasfnew_hofa_dassfsfsfaffasfme_name_perfasfsaospn"="修改配置";
+"fasfnew_hofasfafme_name_perospn_fasfass_fasfs_s"="交易";
+"fasfnew_hofasfafme_name_perospnfasf_tototo"="到：";
+"settingsChange_value_change_txt"="变更值：";
+"fasfnew_hofasfafme_name_perospn_fasfasqwkdas"="交互对象： ";
+"fafasfs_kkkeelsfnew_hofasfafme_name_perospn"="同意结果:";
+
+
+"fasfnew_hofasfafme_name_perospn_fsafsasfa_sdasn"="发送给";
+"fasfnew_hofasfsfasfafme_name_pfserospfasfan"="已同意";
+"dasasf_fasfnew_hofasfafme_name_pe_dasdsrospn"="待确认";
+"fasfnew_hofasfafme_name_perospn_rmpeppee"="空缺";
+"fasfnew_hofasfafme_name_perospn_aooalals"="接受者";
+"fasfnew_hofasfafme_name_perospn_currec_valess"="当前值";
+"fasfs_fasfas_sfffffasfnew_hofasfafme_name_perospn"="请先输入用户名";
+"fasfnew_hofasfafme_name_perospn_exit_famiaa"="退出当前 DAO";
+"fasfnew_hofasfafme_name_perospn_dasfnjlndasfas"="欢迎来到 SafeSnap";
+
+"fasfasffnew_hofasfaffasme_nasssme_perospn_dsafsaasf"="去中心化自治组织(DAO)协同工具";
+"fasfssneaw_hofdsdasfafme_name_perospn"="导入家庭";
+"fasfnew_hofasfafme_name_perospn_dsafsaasf"="保护您的钱包";
+"fassaffasfnefasfw_hoffassafasfafme_name_perospn"="添加额外的安全层以确保您的加密货币安全";
+"keoekfasfnew_hofasfafme_name_perospns"="拷贝分段2";
+"fasfnew_hofasfafme_name_perospn_1111"="拷贝分段1";
+"fasfsfasfnfasfasew_ho_fasfafasfafme_name_perospn_fsaf"="这12个单词是您的秘钥，不要和任何人分享。请手动备份或 iCloud 备份。";
+"fasfnew_hofasfafme_name_perospn_notenoytevhda"="请务必注意：一旦离开该页面，助记词将不会再显示。";
+"fasfnew_hofasfafme_name_perospn_fafaikcoudc"="备份到 iCloud";
+"klofasfa_fasfnew_hofasfafme_name_perospn_faasf"="请自己保管助记词到安全的地方";
+"fas_kslees_fasfnew_hofasfafme_name_perospn"="手动备份";
+"dfasf_loelsfasfnew_hofasfafme_name_perospn"="新用户助记词";
+"fasfasfas_fdsafsafnew_hofasfafme_name_perospn"="请输入助记词";
+"ffa_fasfnew_hofasfafme_name_perosp_fassfsn"="请先输入用户名";
+"ffaaf_fafasssfasfnew_hofasfafme_name_perospn"="输入用户名";
+"fasfnew_hofasfafme_name_perosp_fasfafan"="请输入用户名";
+"ffasfaasffsaf_fasfsnew_hofasfafme_name_perospn"="导入助记词";
+"loalolod_loasdfsafasfnew_hofasfafme_name_perospn"="请输入助记词";
+"fasfa_lloofsnossffasfnew_hofasfafme_name_perospn"="恢复用户";
+"fasfnew_hofasfafme_name_perospfaf_fassfn"="从助记词恢复用户";
+"hello_da_fasfnew_hofasfafme_name_perospn"="正在导入钱包...";
+"comiirnit_fasfnew_hofasfafme_name_perospn"="未能创建钱包";
+"zhanshsyoufasfnew_hofasfafme_name_perospn"="请输入家庭哈希地址";
+"nmae_sdaffasfnew_hofasfafme_name_perospn"="给家庭取个容易记的名字吧";
+"hekosocd_kfasfasfnew_hofasfafme_name_perospn"="名字只用于本机方便记忆，不会分享到其他地方";
+
+"dfafas_hello_fasfnew_hofasfafme_name_perospn"="小明的家";
+"clalos_fasfnew_hofasfafme_name_perospn"="确认加入";
+"illededefasfnew_hofasfafme_name_perospn"="抱歉，当前哈希地址不合法";
+"dfaslleoel_fasfnew_hofasfafme_name_perospn_fsa"="请给家庭取一个名字吧";
+"fasfnew_hofasfafme_name_perospn_cmeomdd"="正在加入";
+"fasfnew_hofasfafme_name_perospn_groupgourp"="DAO";
+
+"fasfnew_hofasfafme_name_perospn_groupgourp_lflasoe"="用户";
+
+"crr_no_login_user_wallet"="当前没有登录用户";
+"process_end_txt"="流程结束";
+"inuut_glocory_liulang_eracth"="正在注册 Snapshot";
+"inuut_glocory_liulang_eracth_dafasfs"="域名是否可以注册：";
+"inuut_glssocorsssy_liulang_eracfasfth"="当前域名不能注册";
+"inuut_glossscory_liulang_eractfasfh"="开始注册 ENS 域名";
+"infasfasuut_glocory_liulfafang_eracth"="Space 不存在，开始创建";
+
+
+"heloda_asdas_kkamcgyo79r"="钱包已登录";
+"heloda_asdas_kkamcgyo79r_fasasf"="钱包未登录";
+"heloda_asdas_kkamcgyo79rfasfas"="DAO 已登录";
+"heloda_asdas_kkamcgyo79_mnpfasf"="DAO 未登录";
+"helodgtja_asdas_kkamfsfacgyo79r"="货币已创建";
+"fasfshelodsssa_asdas_kkamcgyo79r"="货币未创建";
+"dasfaheloda_asdas_kkamcgyo79r_fasass"="SnapShot 已创建";
+"he_fasffklkffvloda_asdas_kkamcgyo79r"="SnapShot 未创建";
+"heloda_asdas_kkamcgyo79r_curre_chian"="当前区块链：";

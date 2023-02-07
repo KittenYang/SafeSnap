@@ -1,0 +1,331 @@
+/* 
+  Localizable.strings
+  family-dao
+
+  Created by KittenYang on 1/15/23.
+  
+*/
+
+"delete"="Delete";
+"copy"="Copy";
+"cancel"="Close";
+"done"="Confirm";
+"success"="success";
+
+"page_home"="Home";
+"page_task"="New Task";
+"page_queue"="Safe";
+"page_proposal"="Snapshot";
+"page_setting"="Setting";
+
+"release_pull_more"="Load More";
+"release_pull_more_done"="No More Datas";
+
+"sorted_by_default"="Sorted by default";
+"sorted_by_name"="Sorted by name";
+"multicolored_only"="Multicolored Only";
+"symbol_viewer_title"="Select Symbol";
+
+
+"lanlan"="Language";
+"lan_en"="English";
+"lan_zhs"="Chinese";
+
+"color_scheme_system"="With System";
+"color_scheme_dark"="Dark";
+"color_scheme_light"="Light";
+
+
+"dev_mode_str"="\nDEV MODE:ON";
+"env_mode_str"="\nENV:DEBUG";
+
+
+"sending"="Sending...";
+"send_ok"="Send successfully";
+"send_cancel"="User cancels operation";
+"send_fail"="Operation failed";
+"send_cancel_sys"="System cancel operation";
+"send_failed_reason"="An error occurred";
+"send_failed_reason_unknow"="Unknown error";
+
+"face_id_hint"="Make sure the operation is initiated by the phone owner";
+
+
+"empty_datas"="No datas yet";
+"retry_text"="Retry";
+
+
+"settings_c_user"="Current User";
+"settings_c_team"="Current DAO";
+"settings_c_team_mems"="Current DAO Members: ";
+"settings_general"="General";
+"settings_support"="Support";
+"settings_help"="Help Center";
+"settings_help_about"="About";
+
+"settings_switch_t"="Switch DAO";
+"settings_switch_t_u"="Username";
+"settings_switch_t_u_app"="Appearance";
+
+"settings_token"="Token Address";
+
+"copy_suss"="Copied!";
+"token_all_supply"="Token total supply";
+"token_rest"="Tokens remaining";
+"team_address"="DAO address";
+"team_name"="Name";
+"team_peo"="Threshold";
+"mem_nick"="Member Note";
+"mem_add"="Add Member";
+
+"pls_input_name"="Please enter your username first";
+"change_prefix"="Modify";
+"input_new_p"="Input New";
+"create_new_u"="Create new user";
+"two_mem"="Member";
+"two_mem_footer"="You can still add members later";
+"change_mem_threshold"="Modify Thresholds";
+"changing_txt"="Changing...";
+"only_one_txt"="Only remove one user at a time";
+"mem_remove_err"="Cannot remove user";
+"only_add_one"="Only add one user at a time";
+"add_mem_can_not_empty"="Add mem can not be empty";
+"mem_not_change"="No change in confirmed number";
+"post_suss"="Submit successfully";
+
+"next_s"="Next Step";
+"piajnsne"="Remark";
+"azadasdsadsa"="Modify member remarks";
+"nextasdasd_s"="Modified successfully";
+"asdnexfast_s"="Complete";
+"nsdssefaxt_sas"="Switch DAO";
+"nsdessssxt_ssss"="Cancel Loading";
+"cccccnext_s"="Continue";
+"beginnext_s"="begins with";
+"hellllnext_s"="ends in";
+"newPorinext_s"="Proposal";
+"next_s_voteee"="Vote your vote";
+"next_s_reson"="Reasons for voting (optional)";
+"newPorinext_s_voteee"="Voted";
+"newPorinext_sing"="Voting...";
+"newPorinext_sorry"="Sorry, you do not have voting rights for the current proposal!";
+"newPorinext_success"="Voting successful";
+"newPorinext_s_men"="Voters";
+"newPorinext_strategy"="Strategy";
+"newPorinext_ssdad"="Voting Strategy";
+"newPorinext_stasuitmtg"="Start Time";
+"faafasnewPasforinext_s"="End Time";
+"sdasnewPordassdinext_s"="Created Time";
+"ccmkmznewPorinext_ssadas"="Block Number";
+"sdnffedfwggPorinext_s"="Proposal Information";
+"newPorinext_snow"="Current";
+"newPorinext_sresult"="Poll Result";
+"newPorinext_sfamilr"="Login DAO";
+"newPorinext_sloginlog"="login";
+"newPorinext_s_WON"="Mine";
+"newPorinext_s_recnet"="Recent";
+
+
+"newPorinext_s_recnet_catee"="By Category";
+"newPorinext_s_recnetfasfsfaf"="Please enter event name";
+"sdasdsanewPorinext_s_recnet_sa"="Please enter the amount";
+"newsadorindasexd_sda_recnedt"="New Mission";
+"newPorinext_s_recne_sdasdqvfhhkhgt"="Event";
+"nessswPorisnesxt_s_recnesst"="Please enter event name, such as sweeping floor";
+"sadsdnewPodassdrinext_s_recnet"="Select Background Color";
+"monfgnewPorinext_s_recnet"="Amount";
+"newPorsppmvbvucinext_s_dasdrecnet"="Please enter the amount";
+"nehszwPsvgorissnext_s_rsecnet"="Save as template";
+"newPorinext_s_reciconslececdenet"="Select Icon";
+"newPorinext_s_recnetPPm_ome_Cloe"="Please select at least one category or color";
+"newPorinext_s_recnet_leiisnx"="Type:";
+"newPorinext_s_recnet_newsdas"="New";
+"newPorinext_s_recnet_mnasdpasnvsv"="New Category";
+"new Porinext_s_recnet_sture"="Study";
+"heloasdaoproosnewPorinext_s_recnet"="Please enter proposal title";
+"nadewfsafadPogdhdfrinext_s_recnet"="Options";
+"newPorinext_s_recne_add_oinitem"="Add Option";
+"nesfswPorfasinefxt_fs_recnasdet"="New Proposal";
+"newPorinext_s_recnet_ttitoot"="Title";
+"newPssssorinfgexaat_s_recnedast"="Please enter proposal title";
+"newPorinext_s_recnet_dassf_dasfsasaf"="Description (optional)";
+"helresoansnewPorinext_s_recsssnet"="Please enter proposal description";
+"ndddewPorddfdinext_s_recnetfss"="There is no Space Domain";
+"sadsnefafwPorfasfinext_s_recnet"="The number of options you at least fill:";
+"newPsfasorfasinext_s_recnedssst"="Presenting proposal";
+"nesws_donPorinext_s_recnssset"="Proposal Done ";
+
+"new_home_name"="Please input the DAO's name";
+"new_hofasme_namasdase"="Please enter the token name";
+"newsss_homess_name"="Please enter the token symbol";
+"ffnew_homdfsfafe_namesasfsf"="Please enter members";
+"new_home_namesssssss"="DAO's Name";
+"nsssew_sshossme_nasssme"="Token Name";
+"new_home_name_suchas"="Example: John's home token";
+"new_hfsamefas_nameasafsf"="Token symbol";
+"sssnewss_hssome_nasssme"="Example: ETHC";
+"nessw_hssssome_namsssss"="Token totoal supply";
+"nessw_hssomssess_name"="e.g. 100000";
+"new_home_name_laterss"="You can still add members later";
+"new_home_name_chooss"="Choose Blockchain";
+"new_home_namasfsfsafe"="Import DAO";
+"new_home_name_new_casodiaas"="Create New DAO";
+"nfasfsaew_hfasfsaome_namesadsa"="It will take a few minutes to create, please do not exit the App";
+"sjfanlnewfasfas_hofffme_nassfame"="Create a new DAO";
+"nfasfsaew_homfsaf_namesfs"="Please enter a legal member address";
+"newss_hosfme_namsfsfe"="Please enter legal currency circulation";
+"sssnew_homssse_name"="Creating a new DAO, this process will take 1~2 minutes, please do not exit the application";
+"new_fsasfhome_namsdsafae"="Confirm the number of people";
+"ssssnew_hosssme_namssse"="How many people each transaction needs to agree before it can pass. At least 1, at most the total number of members";
+"nessssw_home_namssssse"=" / ";
+"new_home_name_perospn"="Person";
+
+
+"new_home_name_perospn_lasss"="Active";
+"new_home_name_perospn_dadasdsad"="Closed";
+"new_home_name_perospn_alllll"="All";
+"new_home_name_perospn_oooooorrr"="Out";
+"new_home_name_perospn_iniinnnin"="Transfer";
+"new_home_name_perospn_agooooo"="Before";
+"new_home_name_perospn_layttttttter"="After";
+"new_home_name_perospn_kethodoamnnort"="No wallet address in Keystore";
+"new_home_name_perospn_json_encode_fail"="JSON Encode failed";
+"new_home_name_perospn_keydajodfailed"="Failed to create Keystore";
+"dasdsafnewfasf_home_name_perospnsfsaf"="Failed to create mnemonic phrase";
+"fsanew_fhoffme_name_perosdaspn"="Authentication failed";
+"sfnessw_hvgjyome_jjname_perospn"="Biometric authentication not available";
+
+"new_home_name_perospn_singkecgis"="Single Choice";
+"fassfanew_home_name_perospn_approavir"="Approval Voting";
+"fdsafanew_hfasfome_nfasfame_pfaserospn"="Ranked Choice Voting";
+"hnjhnew_jhghjome_name_perospn"="Quadratic Voting";
+"fafnefwas_home_fasnfamfeas_perospn"="Weighted Voting";
+"new_home_name_perospn_basisciniopda"="Basic Voting";
+"fasfnew_fashomfase_name_fafsperospn"="Custom";
+"new_home_name_perospn_memememem"="Me";
+"new_home_name_perospnasf_huelloe"="Make sure only you can see the seed phrase";
+"newfas_hofasme_nafasfsame_pefasrospn"="Make sure only you can see the key";
+
+"new_wallsdnew_home_name_perospn"="Creating a new wallet";
+"new_home_name_ssperofasfspnfas"="Uplink failed";
+"new_home_name_perospnffnotneedofaex"="No need to execute";
+"new_home_name_perospn_losodsooweeerr"="❌ ";
+"new_home_name_perospn_sdlineksis"="✅ Chain Confirmed!";
+"new_home_name_perospn_locoaspiciiqcont"="Waiting for chain confirmation";
+"new_home_name_perospn_lininkindds"="Blockchain confirming";
+"new_home_name_perospn_eoororooror"="Parameter error";
+"trnaootokenbnew_home_name_perospn"="Start transferring currency";
+"bkockklksdsanew_home_name_perospn"="The parameter is empty, the initial fund transfer failed";
+"initaoltnetransonew_home_name_perospn"="Start transfer initial currency";
+"newitooencrratenew_home_name_perospn"="Create a new Token";
+"sinbgerrornew_home_name_perospn"="Signature Error";
+"eororkkknlokanew_home_name_perospn"="Missing parameters";
+"new_home_name_perospn_nsojopfajsfa"="No DAO loginned";
+"dasaf_nonopdasfnew_home_name_perospn"="No next nonce found";
+
+"crratnewusernew_home_name_perospn"="Creating user, please wait...";
+"fasfasfsn_sdsfsa_sew_home_name_perospn"="After exiting the current user, you will only be able to browse some information";
+"sdfas_ssfsnew_home_name_perospn"="Exit";
+"fsffsafsafi_areireosure"="Are you sure to exit?";
+"fasfsa_mnNefwnew_home_name_perospn"="New User";
+"asf_kklfafasfanew_home_name_perospn"="Exit current user";
+"ilcoudd_Sfdnew_home_name_perospn"="Restore from iCloud";
+"nfasfafew_hofasfasfme_nafame_perospn"="Recover from mnemonic";
+"fasfnew_hofasfafme_name_perospn"="Please enter your username";
+"are_you_sure_"="Done";
+
+"fasfnew_hofasfafme_name_perospn_fsafsaf"="Logging in user...";
+"fasfnew_hofaffsafsfafme_fsaname_perospnfsafa"="New Task";
+"ffasfasfnew_hofsafasfafme_name_perospn"="New Proposal";
+"fassssfnew_hosssfasfasffme_name_ffperospn"="New DAO";
+"fasfnew_hofssasfassfme_ssname_perssospnss"="New User";
+"fasssfnew_hofasfddafmef_name_perosfsafsapn"="New Transfer";
+"fasfnew_hofasfafme_name_perospn_exitasss"="Are you sure to delete?";
+"ffsasfnew_hofasfafme_name_perospn_sadsf"="Need operate";
+"fasffasfsaffnew_h_fasfofasfafme_name_perospn"="Queuing";
+"fassssfnew_hofasfasssfme_name_perospfasfsasfn"="No.";
+"fasfnhelloleleoeew_hofasfafme_name_perospn"="There are a conflict in operations, members who have not expressed their opinions can vote for any opinion, and the operation that reaches the target number first will automatically replace other operations";
+"fasfnew_hofasfafme_name_perosp_kuieoccen"="Reject";
+"fasfnew_hofasfafme_name_perospndasfasf_dassf"="Remaining";
+"fasfnew_hofasfafme_name_perospndasfasf_dassf_lallal"="Confirm(s)";
+"fasfnew_hofasfafme_name_perospn_norteyo_sadnas"="Thredhold Satisfied. You can submit to chain";
+"fasfnew_hofasfafme_name_perospnvovyeee"="Agree";
+"fasfnew_hofasfafme_name_perospn_fasfsfsa_vssaf"="Vote";
+"ffasfas_link_fasasfnew_hofasfafme_name_perospn"="To chain";
+"fasfnew_hofasfafme_name_peros_nonnonnopn"="Reject this operation";
+"fasfnew_hofasfafme_name_perosfasfasff_fasmuespn"="Transfer";
+"ffaasfn_fasfsa_asfsaew_hofasfafme_name_perospn"="Create Wallet";
+"fafsasffnasf_fasf_fasew_hofasfafme_name_perospn"="Contract Interaction";
+"fdafasfnew_hofa_dassfsfsfaffasfme_name_perfasfsaospn"="Modify Configuration";
+"fasfnew_hofasfafme_name_perospn_fasfass_fasfs_s"="Transaction";
+"fasfnew_hofasfafme_name_perospnfasf_tototo"="To:";
+"settingsChange_value_change_txt"="Change to:";
+"fasfnew_hofasfafme_name_perospn_fasfasqwkdas"="Interact with: ";
+"fafasfs_kkkeelsfnew_hofasfafme_name_perospn"="Agree result:";
+
+
+"fasfnew_hofasfafme_name_perospn_fsafsasfa_sdasn"="Send To";
+"fasfnew_hofasfsfasfafme_name_pfserospfasfan"="Agreed";
+"dasasf_fasfnew_hofasfafme_name_pe_dasdsrospn"="To be confirmed";
+"fasfnew_hofasfafme_name_perospn_rmpeppee"="Vacancy";
+"fasfnew_hofasfafme_name_perospn_aooals"="Acceptor";
+"fasfnew_hofasfafme_name_perospn_currec_valess"="Current value";
+"fasfs_fasfas_sfffffasfnew_hofasfafme_name_perospn"="Please enter your username first";
+"fasfnew_hofasfafme_name_perospn_exit_famiaa"="Exit current DAO";
+"fasfnew_hofasfafme_name_perospn_dasfnjlndasfas"="Welcome to SafeSnap";
+
+
+"fasfasffnew_hofasfaffasme_nasssme_perospn_dsafsaasf"="Decentralized autonomous organization collaborative tool";
+"fasfssneaw_hofdsdasfafme_name_perospn"="Import DAO";
+"fasfnew_hofasfafme_name_perospn_dsafsaasf"="Protect your wallet";
+"fassaffasfnefasfw_hoffassafasfafme_name_perospn"="Adds an extra layer of security to keep your passwords safe";
+"keoekfasfnew_hofasfafme_name_perospns"="Copy segment 2";
+"fasfnew_hofasfafme_name_perospn_1111"="Copy segment 1";
+"fasfsfasfnfasfasew_ho_fasfafasfafme_name_perospn_fsaf"="These 12 words are your secret key, do not share it with anyone. Please backup manually or iCloud.";
+"fasfnew_hofasfafme_name_perospn_notenoytevhda"="Please note: once you leave this page, the mnemonic will not be displayed again.";
+"fasfnew_hofasfafme_name_perospn_fafaikcoudc"="Backup to iCloud";
+"klofasfa_fasfnew_hofasfafme_name_perospn_faasf"="Please keep the mnemonic in a safe place";
+"fas_kslees_fasfnew_hofasfafme_name_perospn"="Manual Backup";
+"dfasf_loelsfasfnew_hofasfafme_name_perospn"="New user mnemonic phrase";
+"fasfasfas_fdsafsafnew_hofasfafme_name_perospn"="Please enter the mnemonic";
+"ffa_fasfnew_hofasfafme_name_perosp_fassfsn"="Please enter your username first";
+"ffaaf_fafasssfasfnew_hofasfafme_name_perospn"="Enter username";
+"fasfnew_hofasfafme_name_perosp_fasfafan"="Please enter your username";
+"ffasfaasffsaf_fasfsnew_hofasfafme_name_perospn"="Import mnemonic words";
+"loalolod_loasdfsafasfnew_hofasfafme_name_perospn"="Please enter the mnemonic phrase";
+"fasfa_lloofsnossffasfnew_hofasfafme_name_perospn"="Restore User";
+"fasfnew_hofasfafme_name_perospfaf_fassfn"="Restore user from seed phrase";
+"hello_da_fasfnew_hofasfafme_name_perospn"="Importing wallet...";
+"comiirnit_fasfnew_hofasfafme_name_perospn"="Failed to create wallet";
+"zhanshsyoufasfnew_hofasfafme_name_perospn"="Please enter the DAO's hash address";
+"nmae_sdaffasfnew_hofasfafme_name_perospn"="Give the DAO an easy-to-remember name";
+"hekosocd_kfasfasfnew_hofasfafme_name_perospn"="The name is only used for local memory and will not be shared with other places";
+
+"dfafas_hello_fasfnew_hofasfafme_name_perospn"="John's home";
+"clalos_fasfnew_hofasfafme_name_perospn"="Confirm Join";
+"illededefasfnew_hofasfafme_name_perospn"="Sorry, the current hash address is invalid";
+"dfaslleoel_fasfnew_hofasfafme_name_perospn_fsa"="Please give the DAO a name";
+"fasfnew_hofasfafme_name_perospn_cmeomdd"="Joining";
+"fasfnew_hofasfafme_name_perospn_groupgourp"="DAO";
+
+"fasfnew_hofasfafme_name_perospn_groupgourp_lflasoe"="User";
+
+
+"crr_no_login_user_wallet"="No wallet login";
+"process_end_txt"="Process End";
+"inuut_glocory_liulang_eracth"="Registering Snapshot";
+"inuut_glocory_liulang_eracth_dafasfs"="Whether the domain name can be registered:";
+"inuut_glssocorsssy_liulang_eracfasfth"="The current domain cannot be registered";
+"inuut_glossscory_liulang_eractfasfh"="Start registering ENS domain";
+"infasfasuut_glocory_liulfafang_eracth"="Space does not exist, start creating";
+
+
+"heloda_asdas_kkamcgyo79r"="Wallet";
+"heloda_asdas_kkamcgyo79r_fasasf"="Wallet";
+"heloda_asdas_kkamcgyo79rfasfas"="DAO online";
+"heloda_asdas_kkamcgyo79_mnpfasf"="DAO offline";
+"helodgtja_asdas_kkamfsfacgyo79r"="Token";
+"fasfshelodsssa_asdas_kkamcgyo79r"="Token";
+"dasfaheloda_asdas_kkamcgyo79r_fasass"="SnapShot";
+"he_fasffklkffvloda_asdas_kkamcgyo79r"="SnapShot";
+"heloda_asdas_kkamcgyo79r_curre_chian"="Blockchain:";
