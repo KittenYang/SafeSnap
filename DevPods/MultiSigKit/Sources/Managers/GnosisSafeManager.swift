@@ -11,7 +11,7 @@ import Foundation
 import GnosisSafeKit
 import SwiftUI
 import web3swift
-import AlscCodableJSON
+import SuperCodableJSON
 import BigInt
 import Defaults
 
@@ -460,7 +460,7 @@ extension GnosisSafeManagerL2 {
 		if let path = Bundle.main.path(forResource: withName, ofType: "json") {
 			do {
 				let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-				let decoder = AlscJSONDecoder()
+				let decoder = SuperJSONDecoder()
 				decoder.valueNotFoundDecodingStrategy = .custom(CustomTransformer())
 				let contract = try decoder.decode(ContractModel.self, from: data)
 				return contract
@@ -474,7 +474,7 @@ extension GnosisSafeManagerL2 {
 }
 
 class CustomTransformer: Transformer {
-	override func transform(_ decoder: AlscDecoder) throws -> String {
+	override func transform(_ decoder: SuperDecoder) throws -> String {
 		guard !decoder.decodeNil() else { return String.defaultValue }
 		if decoder.codingPath.first?.stringValue == "abi" {
 			if let container = decoder.currentContainer() as? [[String: Any]] {

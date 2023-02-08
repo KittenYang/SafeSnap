@@ -1,6 +1,6 @@
 //
 //  CaseDefaultable.swift
-//  AlscCodableJSON
+//  SuperCodableJSON
 //
 //  Created by KittenYang on 6/20/22
 //  Copyright (c) 2022 QITAO Network Technology Co., Ltd. All rights reserved.
@@ -26,7 +26,7 @@ public extension EnumDefaultable {
 public extension EnumDefaultable where Self: Decodable, Self.RawValue: Decodable {
 	
 	init(from decoder: Decoder) throws {
-		guard let _decoder = decoder as? _AlscJSONDecoder else {
+		guard let _decoder = decoder as? _SuperJSONDecoder else {
 			let container = try decoder.singleValueContainer()
 			let rawValue = try container.decode(RawValue.self)
 			self = Self.init(rawValue: rawValue) ?? Self.defaultValue
@@ -37,7 +37,7 @@ public extension EnumDefaultable where Self: Decodable, Self.RawValue: Decodable
 	}
 }
 
-private extension _AlscJSONDecoder {
+private extension _SuperJSONDecoder {
 	
 	func decodeCase<T>(_ type: T.Type) throws -> T
 	where T: EnumDefaultable,

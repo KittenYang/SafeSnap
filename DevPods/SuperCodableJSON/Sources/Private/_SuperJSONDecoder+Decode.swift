@@ -1,6 +1,6 @@
 //
-//  _AlscJSONDecoder+Decode.swift
-//  AlscCodableJSON
+//  _SuperJSONDecoder+Decode.swift
+//  SuperCodableJSON
 //
 //  Created by KittenYang on 6/20/22
 //  Copyright (c) 2022 QITAO Network Technology Co., Ltd. All rights reserved.
@@ -9,7 +9,7 @@
 
 import Foundation
 
-extension _AlscJSONDecoder {
+extension _SuperJSONDecoder {
 	
 	func decodeAsDefaultValue<T: Decodable>() throws -> T {
 		if let array = [] as? T {
@@ -42,7 +42,7 @@ extension _AlscJSONDecoder {
 }
 
 // MARK: decode
-extension _AlscJSONDecoder {
+extension _SuperJSONDecoder {
 	
 	func decode(as type: Date.Type) throws -> Date {
 		if let date = try unbox(storage.topContainer, as: type) { return date }
@@ -100,7 +100,7 @@ extension _AlscJSONDecoder {
 }
 
 // MARK: decodeIfPresent
-extension _AlscJSONDecoder {
+extension _SuperJSONDecoder {
 	
 	func decodeIfPresent<K: CodingKey>(
 		_ value: Any,
@@ -176,7 +176,7 @@ extension _AlscJSONDecoder {
 }
 
 // MARK: SingleValueDecodingContainer Methods
-extension _AlscJSONDecoder : SingleValueDecodingContainer {
+extension _SuperJSONDecoder : SingleValueDecodingContainer {
 	
 	public func decodeNil() -> Bool {
 		return storage.topContainer is NSNull

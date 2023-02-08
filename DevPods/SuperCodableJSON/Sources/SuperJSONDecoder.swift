@@ -1,6 +1,6 @@
 //
-//  AlscJSONDecoder.swift
-//  AlscCodableJSON
+//  SuperJSONDecoder.swift
+//  SuperCodableJSON
 //
 //  Created by KittenYang on 6/20/22
 //  Copyright (c) 2022 QITAO Network Technology Co., Ltd. All rights reserved.
@@ -9,7 +9,7 @@
 
 import Foundation
 
-open class AlscJSONDecoder: JSONDecoder {
+open class SuperJSONDecoder: JSONDecoder {
 	
 	/// Options set on the top-level encoder to pass down the decoding hierarchy.
 	struct Options {
@@ -83,12 +83,12 @@ open class AlscJSONDecoder: JSONDecoder {
 	}
 }
 
-private extension AlscJSONDecoder {
+private extension SuperJSONDecoder {
 	func decode<T : Decodable>(
 		_ type: T.Type,
 		from container: Any
 	) throws -> T {
-		let decoder = _AlscJSONDecoder(referencing: container, options: self.options)
+		let decoder = _SuperJSONDecoder(referencing: container, options: self.options)
 		
 		guard let value = try decoder.unbox(container, as: type) else {
 			throw DecodingError.valueNotFound(type, DecodingError.Context(codingPath: [], debugDescription: "The given data did not contain a top-level value."))

@@ -28,7 +28,7 @@ import Foundation
  */
 public protocol Tabbable: Hashable {
     /// Icon of `TabBar's` item.
-    var icon: String { get }
+    var tabiconImageName: String { get }
     
     /// Title of `TabBar's` item.
     var title: String { get }

@@ -1,6 +1,6 @@
 //
-//  DecodingError+AlscJSON.swift
-//  AlscCodableJSON
+//  DecodingError+SuperJSON.swift
+//  SuperCodableJSON
 //
 //  Created by KittenYang on 6/20/22
 //  Copyright (c) 2022 QITAO Network Technology Co., Ltd. All rights reserved.
@@ -80,7 +80,7 @@ extension DecodingError {
 				return DecodingError.valueNotFound(
 					type,
 					DecodingError.Context(
-						codingPath: codingPath + [AlscJSONKey(index: currentIndex)],
+						codingPath: codingPath + [SuperJSONKey(index: currentIndex)],
 						debugDescription: debugDescription))
 			}
 	}

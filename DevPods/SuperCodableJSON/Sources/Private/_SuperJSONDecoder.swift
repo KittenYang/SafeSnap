@@ -1,6 +1,6 @@
 //
-//  _AlscJSONDecoder.swift
-//  AlscCodableJSON
+//  _SuperJSONDecoder.swift
+//  SuperCodableJSON
 //
 //  Created by KittenYang on 6/20/22
 //  Copyright (c) 2022 QITAO Network Technology Co., Ltd. All rights reserved.
@@ -9,13 +9,13 @@
 
 import Foundation
 
-final class _AlscJSONDecoder: AlscDecoder {
+final class _SuperJSONDecoder: SuperDecoder {
 	
 	/// The decoder's storage.
-	var storage: AlscJSONDecodingStorage
+	var storage: SuperJSONDecodingStorage
 	
 	/// Options set on the top-level decoder.
-	let options: AlscJSONDecoder.Options
+	let options: SuperJSONDecoder.Options
 	
 	/// The path to the current point in encoding.
 	public var codingPath: [CodingKey]
@@ -28,8 +28,8 @@ final class _AlscJSONDecoder: AlscDecoder {
 	// MARK: - Initialization
 	
 	/// Initializes `self` with the given top-level container and options.
-	init(referencing container: Any, at codingPath: [CodingKey] = [], options: AlscJSONDecoder.Options) {
-		self.storage = AlscJSONDecodingStorage()
+	init(referencing container: Any, at codingPath: [CodingKey] = [], options: SuperJSONDecoder.Options) {
+		self.storage = SuperJSONDecodingStorage()
 		self.storage.push(container: container)
 		self.codingPath = codingPath
 		self.options = options
@@ -46,10 +46,10 @@ final class _AlscJSONDecoder: AlscDecoder {
 					codingPath: codingPath,
 					debugDescription: "Cannot get keyed decoding container -- found null value instead.")
 			case .useEmptyContainer:
-				let container = AlscJSONKeyedDecodingContainer<Key>(referencing: self, wrapping: [:])
+				let container = SuperJSONKeyedDecodingContainer<Key>(referencing: self, wrapping: [:])
 				return KeyedDecodingContainer(container)
 			case .useDefaultValue:
-				let container = AlscJSONKeyedDecodingContainer<Key>(referencing: self, wrapping: Dictionary.defaultValue)
+				let container = SuperJSONKeyedDecodingContainer<Key>(referencing: self, wrapping: Dictionary.defaultValue)
 				return KeyedDecodingContainer(container)
 			}
 		}
@@ -62,15 +62,15 @@ final class _AlscJSONDecoder: AlscDecoder {
 					expectation: [String : Any].self,
 					reality: storage.topContainer)
 			case .useEmptyContainer:
-				let container = AlscJSONKeyedDecodingContainer<Key>(referencing: self, wrapping: [:])
+				let container = SuperJSONKeyedDecodingContainer<Key>(referencing: self, wrapping: [:])
 				return KeyedDecodingContainer(container)
 			case .useDefaultValue:
-				let container = AlscJSONKeyedDecodingContainer<Key>(referencing: self, wrapping: Dictionary.defaultValue)
+				let container = SuperJSONKeyedDecodingContainer<Key>(referencing: self, wrapping: Dictionary.defaultValue)
 				return KeyedDecodingContainer(container)
 			}
 		}
 		
-		let container = AlscJSONKeyedDecodingContainer<Key>(referencing: self, wrapping: topContainer)
+		let container = SuperJSONKeyedDecodingContainer<Key>(referencing: self, wrapping: topContainer)
 		return KeyedDecodingContainer(container)
 	}
 	
@@ -83,9 +83,9 @@ final class _AlscJSONDecoder: AlscDecoder {
 					codingPath: codingPath,
 					debugDescription: "Cannot get unkeyed decoding container -- found null value instead.")
 			case .useEmptyContainer:
-				return AlscJSONUnkeyedDecodingContainer(referencing: self, wrapping: [])
+				return SuperJSONUnkeyedDecodingContainer(referencing: self, wrapping: [])
 			case .useDefaultValue:
-				return AlscJSONUnkeyedDecodingContainer(referencing: self, wrapping: Array.defaultValue)
+				return SuperJSONUnkeyedDecodingContainer(referencing: self, wrapping: Array.defaultValue)
 			}
 		}
 		
@@ -97,13 +97,13 @@ final class _AlscJSONDecoder: AlscDecoder {
 					expectation: [Any].self,
 					reality: storage.topContainer)
 			case .useEmptyContainer:
-				return AlscJSONUnkeyedDecodingContainer(referencing: self, wrapping: [])
+				return SuperJSONUnkeyedDecodingContainer(referencing: self, wrapping: [])
 			case .useDefaultValue:
-				return AlscJSONUnkeyedDecodingContainer(referencing: self, wrapping: Array.defaultValue)
+				return SuperJSONUnkeyedDecodingContainer(referencing: self, wrapping: Array.defaultValue)
 			}
 		}
 		
-		return AlscJSONUnkeyedDecodingContainer(referencing: self, wrapping: topContainer)
+		return SuperJSONUnkeyedDecodingContainer(referencing: self, wrapping: topContainer)
 	}
 	
 	public func singleValueContainer() throws -> SingleValueDecodingContainer {

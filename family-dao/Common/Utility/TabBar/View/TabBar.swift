@@ -94,22 +94,22 @@ public struct TabBar<TabItem: Tabbable, Content: View>: View {
 		HStack {
 			ForEach(self.items, id: \.self) { item in
 				self.tabItemStyle.tabItem(item: item, isSelected: self.selectedItem.selection == item, flag: flag)
-					.modifier(MagicStuff(activeIdx: selectedItem.$selection, idx: item))
-					.background(CGRectGeometry(coordinateSpaceName: geoName))
-					.onPreferenceChange(CGRectPreferenceKey.self, perform: { self.bindedWidths[item] = $0 })
-					.highPriorityGesture(
-						TapGesture()
-							.onEnded({ _ in
-								if let customHandler = item.customHandler {
-									customHandler(item)
-								} else {
-									self.selectedItem.selection = item
-									self.selectedItem.objectWillChange.send()
-								}
-							})
-					)
+                    .highPriorityGesture(
+                        TapGesture()
+                            .onEnded({ _ in
+                                if let customHandler = item.customHandler {
+                                    customHandler(item)
+                                } else {
+                                    self.selectedItem.selection = item
+                                    self.selectedItem.objectWillChange.send()
+                                }
+                            })
+                    )
+                    .modifier(MagicStuff(activeIdx: selectedItem.$selection, idx: item))
+                    .background(CGRectGeometry(coordinateSpaceName: geoName))
+                    .onPreferenceChange(CGRectPreferenceKey.self, perform: { self.bindedWidths[item] = $0 })
 					.scaleEffect(item == self.selectedItem.selection ? 1.1 : 0.9)
-					.foregroundColor(item == self.selectedItem.selection ? .appTheme : .gray)
+//					.foregroundColor(item == self.selectedItem.selection ? .appTheme : .gray)
 			}
 			.frame(maxWidth: .infinity)
 		}

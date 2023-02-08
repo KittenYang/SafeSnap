@@ -8,7 +8,7 @@
     
 
 import Defaults
-import AlscCodableJSON
+import SuperCodableJSON
 
 public extension Defaults.Keys {
 	static let recentActions = Key<[ActionModel]>("recentActions", default: [.demo])
@@ -94,7 +94,7 @@ public struct StoreActionCategoryBridge: Defaults.Bridge {
 	public func deserialize(_ object: Serializable?) -> Value? {
 		guard
 			let data = object?.data(using: .utf8),
-			let value = try? AlscJSONDecoder().decode(Value.self, from: data)
+			let value = try? SuperJSONDecoder().decode(Value.self, from: data)
 		else {
 			return nil
 		}
@@ -145,7 +145,7 @@ public struct ActionModelBridge<T:Codable>: Defaults.Bridge {
 	public func deserialize(_ object: Serializable?) -> Value? {
 		guard
 			let data = object?.data(using: .utf8),
-			let value = try? AlscJSONDecoder().decode(Value.self, from: data)
+			let value = try? SuperJSONDecoder().decode(Value.self, from: data)
 		else {
 			return nil
 		}

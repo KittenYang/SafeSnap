@@ -1,6 +1,6 @@
 //
 //  Defaultable.swift
-//  AlscCodableJSON
+//  SuperCodableJSON
 //
 //  Created by KittenYang on 6/20/22
 //  Copyright (c) 2022 QITAO Network Technology Co., Ltd. All rights reserved.
@@ -14,8 +14,8 @@ public protocol Defaultable {
 }
 
 func _getDefaultValue<T>(_ defaultValue:T) -> T /*where T: Defaultable*/ {
-	if Thread.current.alscsCurrentDecoding {
-		return Thread.current.alscsWrapperInfos.last?.first?.defaultValue as? T ?? defaultValue
+	if Thread.current.SupersCurrentDecoding {
+		return Thread.current.SupersWrapperInfos.last?.first?.defaultValue as? T ?? defaultValue
 	} else {
 		return defaultValue
 	}

@@ -1,6 +1,6 @@
 //
-//  AlscJSONKey.swift
-//  AlscCodableJSON
+//  SuperJSONKey.swift
+//  SuperCodableJSON
 //
 //  Created by KittenYang on 6/20/22
 //  Copyright (c) 2022 QITAO Network Technology Co., Ltd. All rights reserved.
@@ -9,7 +9,7 @@
 
 import Foundation
 
-public struct AlscJSONKey : CodingKey {
+public struct SuperJSONKey : CodingKey {
 	
 	public var stringValue: String
 	
@@ -35,5 +35,5 @@ public struct AlscJSONKey : CodingKey {
 		self.intValue = index
 	}
 	
-	static let `super` = AlscJSONKey(stringValue: "super")!
+	static let `super` = SuperJSONKey(stringValue: "super")!
 }

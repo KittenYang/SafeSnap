@@ -36,7 +36,7 @@ public struct DefaultTabItemStyle: TabItemStyle {
         let color: Color = isSelected ? .accentColor : .gray
         
         VStack(spacing: 5.0) {
-					Image(systemName: item.icon)
+            Image(item.tabiconImageName)
                 .renderingMode(.template)
             
 					Text(item.title)

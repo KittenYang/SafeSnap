@@ -1,6 +1,6 @@
 //
-//  AlscDecoder.swift
-//  AlscCodableJSON
+//  SuperDecoder.swift
+//  SuperCodableJSON
 //
 //  Created by KittenYang on 6/20/22
 //  Copyright (c) 2022 QITAO Network Technology Co., Ltd. All rights reserved.
@@ -9,7 +9,7 @@
 
 import Foundation
 
-public protocol AlscDecoder: Decoder {
+public protocol SuperDecoder: Decoder {
 	
 	func currentContainer() -> Any
 	
@@ -52,8 +52,8 @@ public protocol AlscDecoder: Decoder {
 	func decodeIfPresent<T: Decodable>(_ type: T.Type) throws -> T?
 }
 
-// MARK: AlscDecoder Methods
-extension _AlscJSONDecoder {
+// MARK: SuperDecoder Methods
+extension _SuperJSONDecoder {
 	
 	func decodeIfPresent(_ type: Bool.Type) throws -> Bool? {
 		return try unbox(storage.topContainer, as: type)

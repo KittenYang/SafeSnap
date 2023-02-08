@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.resources = '*.xcdatamodeld'
   s.dependency  'GnosisSafeKit'
   s.dependency  'NetworkKit'
-  s.dependency  'AlscCodableJSON'
+  s.dependency  'SuperCodableJSON'
   s.dependency  'web3swift'
   s.dependency  'KeychainAccess'
   s.dependency  'Defaults'

@@ -1,6 +1,6 @@
 //
 //  DecodingStrategy.swift
-//  AlscCodableJSON
+//  SuperCodableJSON
 //
 //  Created by KittenYang on 6/20/22
 //  Copyright (c) 2022 QITAO Network Technology Co., Ltd. All rights reserved.
@@ -9,7 +9,7 @@
 
 import Foundation
 
-extension AlscJSONDecoder {
+extension SuperJSONDecoder {
 	
 	public enum KeyNotFoundDecodingStrategy {
 		case `throw`
@@ -28,7 +28,7 @@ extension AlscJSONDecoder {
 	}
 }
 
-extension AlscJSONDecoder {
+extension SuperJSONDecoder {
 	
 	public struct NestedContainerDecodingStrategy {
 		
@@ -68,7 +68,7 @@ extension AlscJSONDecoder {
 
 public extension JSONDecoder.KeyDecodingStrategy {
 	static func mapper(_ container: [[String]: String]) -> JSONDecoder.KeyDecodingStrategy {
-		.custom { AlscJSONKeysConverter(container)($0) }
+		.custom { SuperJSONKeysConverter(container)($0) }
 	}
 }
 

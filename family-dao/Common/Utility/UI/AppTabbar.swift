@@ -53,13 +53,13 @@ enum AppTabbarItem:Hashable,Tabbable,Identifiable, Equatable {
 	case fourth
 	case setting
 	
-	var icon: String {
+	var tabiconImageName: String {
 		switch self {
-		case .first: return "house.fill"
+		case .first: return "tab_home"//"house.fill"
 		case .second: return ""
-		case .third: return "circle.grid.2x1.left.filled"
-		case .fourth: return "circle.grid.2x1.right.filled"//"ticket.fill"
-		case .setting: return "gearshape.fill"
+		case .third: return "tab_queue"//"circle.grid.2x1.left.filled"
+		case .fourth: return "tab_proposals"// "circle.grid.2x1.right.filled"//"ticket.fill"
+		case .setting: return "tab_settings"//"gearshape.fill"
 		}
 	}
 	
@@ -275,43 +275,32 @@ extension View {
 }
 
 struct CustomTabItemStyle: TabItemStyle {
-	
-
-	let namespace: Namespace.ID
-	
-	public func tabItem(item: any Tabbable, isSelected: Bool, flag: Binding<Bool>) -> some View {
-		Image(systemName: item.icon)
-			.resizable()
-			.aspectRatio(contentMode: .fit)
-//			.glow(color: .appTheme)
-//			.addGlowEffect(color:.appTheme.opacity(1.0),
-//						   color1: .appTheme.opacity(0.8),
-//						   color2: .appTheme.opacity(0.5),
-//						   color3: .appTheme.opacity(0.2))
-			.modify(if: item as! AppTabbarItem == AppTabbarItem.second(handler: nil), transform: { v in
-				v.frame(width: 30.0, height: 30.0)
-					.foregroundColor(.white)
-					.padding(8.0)
-//					.background(.appTheme)
-//					.cornerRadius(25.0)
-					.opacity(flag.wrappedValue ? 1.0 : 0.0)
-//					.matchedGeometryEffect(id: "center_circle", in: namespace)
-//					.animation(.easeInOut(duration: 0.35), value: flag.wrappedValue)
-			})
-			.modify(if: item as! AppTabbarItem != AppTabbarItem.second(handler: nil), transform: { v in
-				v.frame(width: 25.0, height: 25.0)
-//					.foregroundColor(isSelected ? .appTheme : .gray)
-			})
-//			.overlay(alignment: .bottom) {
-//				if isSelected {
-//					Circle()
-//						.foregroundColor(.appTheme)
-//						.frame(width: 5.0, height: 5.0)
-//						.offset(y:12)
-//				}
-//			}
-	}
-	
+    
+    let namespace: Namespace.ID
+    
+    public func tabItem(item: any Tabbable, isSelected: Bool, flag: Binding<Bool>) -> some View {
+        ZStack {
+            Image(item.tabiconImageName)
+//            Image(systemName: item.icon)
+                .resizable()
+                .renderingMode(.template)
+                .foregroundColor(isSelected ? .appTheme : .gray)
+                .aspectRatio(contentMode: .fit)
+                .modify(if: item as! AppTabbarItem == AppTabbarItem.second(handler: nil), transform: { v in
+                    v.frame(width: 30.0, height: 30.0)
+                        .foregroundColor(.white)
+                        .padding(8.0)
+                        .opacity(flag.wrappedValue ? 1.0 : 0.0)
+                })
+                .modify(if: item as! AppTabbarItem != AppTabbarItem.second(handler: nil), transform: { v in
+                    v.frame(width: 25.0, height: 25.0)
+                })
+            
+        }
+        .frame(width: 50, height: 50)
+        .contentShape(Rectangle())
+    }
+    
 }
 
 extension View {

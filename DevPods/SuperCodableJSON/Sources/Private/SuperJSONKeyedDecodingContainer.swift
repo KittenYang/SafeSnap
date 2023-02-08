@@ -1,6 +1,6 @@
 //
-//  AlscJSONKeyedDecodingContainer.swift
-//  AlscCodableJSON
+//  SuperJSONKeyedDecodingContainer.swift
+//  SuperCodableJSON
 //
 //  Created by KittenYang on 6/20/22
 //  Copyright (c) 2022 QITAO Network Technology Co., Ltd. All rights reserved.
@@ -10,14 +10,14 @@
 import Foundation
 
 // 参考 Foundation 的 JSONKeyedDecodingContainer 源码实现一个容错性更好的 container
-struct AlscJSONKeyedDecodingContainer<K : CodingKey>: KeyedDecodingContainerProtocol {
+struct SuperJSONKeyedDecodingContainer<K : CodingKey>: KeyedDecodingContainerProtocol {
 	
 	typealias Key = K
 	
 	// MARK: Properties
 	
 	/// A reference to the decoder we're reading from.
-	private let decoder: _AlscJSONDecoder
+	private let decoder: _SuperJSONDecoder
 	
 	/// A reference to the container we're reading from.
 	private var container: [String : Any]
@@ -28,7 +28,7 @@ struct AlscJSONKeyedDecodingContainer<K : CodingKey>: KeyedDecodingContainerProt
 	// MARK: - Initialization
 	
 	/// Initializes `self` by referencing the given decoder and container.
-	init(referencing decoder: _AlscJSONDecoder, wrapping container: [String : Any]) {
+	init(referencing decoder: _SuperJSONDecoder, wrapping container: [String : Any]) {
 		self.decoder = decoder
 		switch decoder.options.keyDecodingStrategy {
 		case .useDefaultKeys:
@@ -37,11 +37,11 @@ struct AlscJSONKeyedDecodingContainer<K : CodingKey>: KeyedDecodingContainerProt
 			// Convert the snake case keys in the container to camel case.
 			// If we hit a duplicate key after conversion, then we'll use the first one we saw. Effectively an undefined behavior with JSON dictionaries.
 			self.container = Dictionary(container.map {
-				dict in (AlscJSONDecoder.KeyDecodingStrategy._convertFromSnakeCase(dict.key), dict.value)
+				dict in (SuperJSONDecoder.KeyDecodingStrategy._convertFromSnakeCase(dict.key), dict.value)
 			}, uniquingKeysWith: { (first, _) in first })
 		case .custom(let converter):
 			self.container = Dictionary(container.map {
-				key, value in (converter(decoder.codingPath + [AlscJSONKey(stringValue: key, intValue: nil)]).stringValue, value)
+				key, value in (converter(decoder.codingPath + [SuperJSONKey(stringValue: key, intValue: nil)]).stringValue, value)
 			}, uniquingKeysWith: { (first, _) in first })
 		@unknown default:
 			self.container = container
@@ -421,7 +421,7 @@ struct AlscJSONKeyedDecodingContainer<K : CodingKey>: KeyedDecodingContainerProt
 	private func _getEntryBy(_ key: Key) -> Any? {
 		var _entry: Any? = container[key.stringValue]
 		if _entry == nil {
-			let codingKeys = Thread.current.alscsWrapperInfos.last?.first?.codingKeys ?? []
+			let codingKeys = Thread.current.SupersWrapperInfos.last?.first?.codingKeys ?? []
 			for k in codingKeys {
 				if let v = container[k] {
 					_entry = v
@@ -449,7 +449,7 @@ struct AlscJSONKeyedDecodingContainer<K : CodingKey>: KeyedDecodingContainerProt
 		decoder.codingPath.append(key)
 		defer { decoder.codingPath.removeLast() }
 		
-		func decodeObject(from decoder: _AlscJSONDecoder) throws -> T {
+		func decodeObject(from decoder: _SuperJSONDecoder) throws -> T {
 			if let value = try decoder.unbox(entry, as: type) { return value }
 			
 			switch decoder.options.valueNotFoundDecodingStrategy {
@@ -525,7 +525,7 @@ struct AlscJSONKeyedDecodingContainer<K : CodingKey>: KeyedDecodingContainerProt
 	@inline(__always)
 	private func nestedContainer<NestedKey>(wrapping dictionary: [String: Any] = [:])
 	-> KeyedDecodingContainer<NestedKey> {
-		let container = AlscJSONKeyedDecodingContainer<NestedKey>(
+		let container = SuperJSONKeyedDecodingContainer<NestedKey>(
 			referencing: decoder,
 			wrapping: dictionary)
 		return KeyedDecodingContainer(container)
@@ -541,9 +541,9 @@ struct AlscJSONKeyedDecodingContainer<K : CodingKey>: KeyedDecodingContainerProt
 			case .throw:
 				throw DecodingError.Nested.keyNotFound(key, codingPath: codingPath, isUnkeyed: true)
 			case .useEmptyContainer:
-				return AlscJSONUnkeyedDecodingContainer(referencing: self.decoder, wrapping: [])
+				return SuperJSONUnkeyedDecodingContainer(referencing: self.decoder, wrapping: [])
 			case .useDefaultValue:
-				return AlscJSONUnkeyedDecodingContainer(referencing: self.decoder, wrapping: Array.defaultValue)
+				return SuperJSONUnkeyedDecodingContainer(referencing: self.decoder, wrapping: Array.defaultValue)
 			}
 		}
 		
@@ -554,13 +554,13 @@ struct AlscJSONKeyedDecodingContainer<K : CodingKey>: KeyedDecodingContainerProt
 					at: self.codingPath,
 					expectation: [Any].self, reality: value)
 			case .useEmptyContainer:
-				return AlscJSONUnkeyedDecodingContainer(referencing: self.decoder, wrapping: [])
+				return SuperJSONUnkeyedDecodingContainer(referencing: self.decoder, wrapping: [])
 			case .useDefaultValue:
-				return AlscJSONUnkeyedDecodingContainer(referencing: self.decoder, wrapping: Array.defaultValue)
+				return SuperJSONUnkeyedDecodingContainer(referencing: self.decoder, wrapping: Array.defaultValue)
 			}
 		}
 		
-		return AlscJSONUnkeyedDecodingContainer(referencing: self.decoder, wrapping: array)
+		return SuperJSONUnkeyedDecodingContainer(referencing: self.decoder, wrapping: array)
 	}
 	
 	@inline(__always)
@@ -569,12 +569,12 @@ struct AlscJSONKeyedDecodingContainer<K : CodingKey>: KeyedDecodingContainerProt
 		defer { self.decoder.codingPath.removeLast() }
 		
 		let value: Any = self.container[key.stringValue] ?? NSNull()
-		return _AlscJSONDecoder(referencing: value, at: self.decoder.codingPath, options: self.decoder.options)
+		return _SuperJSONDecoder(referencing: value, at: self.decoder.codingPath, options: self.decoder.options)
 	}
 	
 	@inline(__always)
 	public func superDecoder() throws -> Decoder {
-		return try _superDecoder(forKey: AlscJSONKey.super)
+		return try _superDecoder(forKey: SuperJSONKey.super)
 	}
 	
 	@inline(__always)
@@ -583,7 +583,7 @@ struct AlscJSONKeyedDecodingContainer<K : CodingKey>: KeyedDecodingContainerProt
 	}
 }
 
-extension AlscJSONKeyedDecodingContainer {
+extension SuperJSONKeyedDecodingContainer {
 	
 	@inline(__always)
 	func decodeIfPresent(_ type: Bool.Type, forKey key: K) throws -> Bool? {
@@ -896,7 +896,7 @@ extension AlscJSONKeyedDecodingContainer {
 		
 		if try decodeNil(forKey: key) { return nil }
 		
-		func decodeObject(from decoder: _AlscJSONDecoder) throws -> T? {
+		func decodeObject(from decoder: _SuperJSONDecoder) throws -> T? {
 			if let value = try decoder.unbox(entry, as: type) { return value }
 			
 			switch decoder.options.valueNotFoundDecodingStrategy {
@@ -933,7 +933,7 @@ extension AlscJSONKeyedDecodingContainer {
 	
 }
 
-private extension AlscJSONKeyedDecodingContainer {
+private extension SuperJSONKeyedDecodingContainer {
 	func decodeIfKeyNotFound<T>(_ key: Key) throws -> T where T: Decodable, T: Defaultable {
 		switch decoder.options.keyNotFoundDecodingStrategy {
 		case .throw:
@@ -958,7 +958,7 @@ private extension String {
 	}
 }
 
-private extension AlscJSONDecoder.KeyDecodingStrategy {
+private extension SuperJSONDecoder.KeyDecodingStrategy {
 	
 	static func _convertFromSnakeCase(_ stringKey: String) -> String {
 		guard !stringKey.isEmpty else { return stringKey }

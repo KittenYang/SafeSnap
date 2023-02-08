@@ -61,7 +61,7 @@ struct SettingView: View {
 							.font(.rounded(size: 14.0))
 					})
 				}))
-				,.init(emoji:"☕", text: "Tip Jar", subText: nil, rightIcon:.init(systemName: "doc.on.doc"), rightView: .init(id: "tip_jar_cell", closure: { _ in
+                ,.init(icon:.init(named: "eth_logo_pixel"), text: "Author", subText: nil, rightIcon:.init(systemName: "doc.on.doc"), rightView: .init(id: "tip_jar_cell", closure: { _ in
 					Link(destination: .init(string: "https://metamask.app.link/send/0x9D68df58C48ce745306757897bb8FaA3FE72A1BF")!, label: {
 						Text("0x9D68df58C48ce745306757897bb8FaA3FE72A1BF")
 							.font(.rounded(size: 14.0))

@@ -1,6 +1,6 @@
 //
 //  JSONTransformer.swift
-//  AlscCodableJSON
+//  SuperCodableJSON
 //
 //  Created by KittenYang on 6/20/22
 //  Copyright (c) 2022 QITAO Network Technology Co., Ltd. All rights reserved.
@@ -11,84 +11,84 @@ import Foundation
 
 public protocol JSONTransformer {
 	
-	func transform(_ decoder: AlscDecoder) throws -> Bool
+	func transform(_ decoder: SuperDecoder) throws -> Bool
 	
-	func transform(_ decoder: AlscDecoder) throws -> Int
+	func transform(_ decoder: SuperDecoder) throws -> Int
 	
-	func transform(_ decoder: AlscDecoder) throws -> Int8
+	func transform(_ decoder: SuperDecoder) throws -> Int8
 	
-	func transform(_ decoder: AlscDecoder) throws -> Int16
+	func transform(_ decoder: SuperDecoder) throws -> Int16
 	
-	func transform(_ decoder: AlscDecoder) throws -> Int32
+	func transform(_ decoder: SuperDecoder) throws -> Int32
 	
-	func transform(_ decoder: AlscDecoder) throws -> Int64
+	func transform(_ decoder: SuperDecoder) throws -> Int64
 	
-	func transform(_ decoder: AlscDecoder) throws -> UInt
+	func transform(_ decoder: SuperDecoder) throws -> UInt
 	
-	func transform(_ decoder: AlscDecoder) throws -> UInt8
+	func transform(_ decoder: SuperDecoder) throws -> UInt8
 	
-	func transform(_ decoder: AlscDecoder) throws -> UInt16
+	func transform(_ decoder: SuperDecoder) throws -> UInt16
 	
-	func transform(_ decoder: AlscDecoder) throws -> UInt32
+	func transform(_ decoder: SuperDecoder) throws -> UInt32
 	
-	func transform(_ decoder: AlscDecoder) throws -> UInt64
+	func transform(_ decoder: SuperDecoder) throws -> UInt64
 	
-	func transform(_ decoder: AlscDecoder) throws -> Float
+	func transform(_ decoder: SuperDecoder) throws -> Float
 	
-	func transform(_ decoder: AlscDecoder) throws -> Double
+	func transform(_ decoder: SuperDecoder) throws -> Double
 	
-	func transform(_ decoder: AlscDecoder) throws -> String
+	func transform(_ decoder: SuperDecoder) throws -> String
 	
-	func transform(_ decoder: AlscDecoder) throws -> Date
+	func transform(_ decoder: SuperDecoder) throws -> Date
 	
-	func transform(_ decoder: AlscDecoder) throws -> Data
+	func transform(_ decoder: SuperDecoder) throws -> Data
 	
-	func transform(_ decoder: AlscDecoder) throws -> URL
+	func transform(_ decoder: SuperDecoder) throws -> URL
 	
-	func transform(_ decoder: AlscDecoder) throws -> Decimal
+	func transform(_ decoder: SuperDecoder) throws -> Decimal
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> Bool?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> Bool?
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> Int?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> Int?
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> Int8?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> Int8?
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> Int16?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> Int16?
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> Int32?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> Int32?
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> Int64?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> Int64?
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> UInt?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> UInt?
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> UInt8?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> UInt8?
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> UInt16?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> UInt16?
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> UInt32?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> UInt32?
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> UInt64?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> UInt64?
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> Float?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> Float?
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> Double?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> Double?
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> String?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> String?
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> Date?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> Date?
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> Data?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> Data?
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> URL?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> URL?
 	
-	func transformIfPresent(_ decoder: AlscDecoder) throws -> Decimal?
+	func transformIfPresent(_ decoder: SuperDecoder) throws -> Decimal?
 	
-	func transformIfPresent<T: Decodable>(_ decoder: AlscDecoder) throws -> T?
+	func transformIfPresent<T: Decodable>(_ decoder: SuperDecoder) throws -> T?
 }
 
 // MARK: Helper
 private extension JSONTransformer {
-	func _losslessStringTypeSafeTransfer<T>(type: T.Type, decoder: AlscDecoder) throws -> T where T: Defaultable & LosslessStringConvertible {
+	func _losslessStringTypeSafeTransfer<T>(type: T.Type, decoder: SuperDecoder) throws -> T where T: Defaultable & LosslessStringConvertible {
 		guard !decoder.decodeNil() else { return T.defaultValue }
 		
 		// string -> int
@@ -123,7 +123,7 @@ open class Transformer: JSONTransformer {
 	// MARK: non-optional Type
 	// 布尔值容错+默认值
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> Bool {
+	open func transform(_ decoder: SuperDecoder) throws -> Bool {
 		// null -> false
 		if decoder.decodeNil() {
 			return false
@@ -155,62 +155,62 @@ open class Transformer: JSONTransformer {
 	
 	// Int值容错+默认值
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> Int {
+	open func transform(_ decoder: SuperDecoder) throws -> Int {
 		return try _losslessStringTypeSafeTransfer(type: Int.self, decoder: decoder)
 	}
 	
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> Int8 {
+	open func transform(_ decoder: SuperDecoder) throws -> Int8 {
 		return try _losslessStringTypeSafeTransfer(type: Int8.self, decoder: decoder)
 	}
 	
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> Int16 {
+	open func transform(_ decoder: SuperDecoder) throws -> Int16 {
 		return try _losslessStringTypeSafeTransfer(type: Int16.self, decoder: decoder)
 	}
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> Int32 {
+	open func transform(_ decoder: SuperDecoder) throws -> Int32 {
 		return try _losslessStringTypeSafeTransfer(type: Int32.self, decoder: decoder)
 	}
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> Int64 {
+	open func transform(_ decoder: SuperDecoder) throws -> Int64 {
 		return try _losslessStringTypeSafeTransfer(type: Int64.self, decoder: decoder)
 	}
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> UInt {
+	open func transform(_ decoder: SuperDecoder) throws -> UInt {
 		return try _losslessStringTypeSafeTransfer(type: UInt.self, decoder: decoder)
 	}
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> UInt8 {
+	open func transform(_ decoder: SuperDecoder) throws -> UInt8 {
 		return try _losslessStringTypeSafeTransfer(type: UInt8.self, decoder: decoder)
 	}
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> UInt16 {
+	open func transform(_ decoder: SuperDecoder) throws -> UInt16 {
 		return try _losslessStringTypeSafeTransfer(type: UInt16.self, decoder: decoder)
 	}
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> UInt32 {
+	open func transform(_ decoder: SuperDecoder) throws -> UInt32 {
 		return try _losslessStringTypeSafeTransfer(type: UInt32.self, decoder: decoder)
 	}
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> UInt64 {
+	open func transform(_ decoder: SuperDecoder) throws -> UInt64 {
 		return try _losslessStringTypeSafeTransfer(type: UInt64.self, decoder: decoder)
 	}
 	
 	// 浮点值容错+默认值
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> Float {
+	open func transform(_ decoder: SuperDecoder) throws -> Float {
 		return try _losslessStringTypeSafeTransfer(type: Float.self, decoder: decoder)
 	}
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> Double {
+	open func transform(_ decoder: SuperDecoder) throws -> Double {
 		return try _losslessStringTypeSafeTransfer(type: Double.self, decoder: decoder)
 	}
 	
 	
 	// String 值容错+默认值
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> String {
+	open func transform(_ decoder: SuperDecoder) throws -> String {
 		guard !decoder.decodeNil() else { return String.defaultValue }
 		
 		//int -> string
@@ -230,8 +230,8 @@ open class Transformer: JSONTransformer {
 	
 	// Date 值默认值+容错
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> Date {
-		guard let decoder = decoder as? _AlscJSONDecoder else { return Date.defaultValue }
+	open func transform(_ decoder: SuperDecoder) throws -> Date {
+		guard let decoder = decoder as? _SuperJSONDecoder else { return Date.defaultValue }
 		
 		var tm: TimeInterval?
 		//int -> Date
@@ -257,13 +257,13 @@ open class Transformer: JSONTransformer {
 	
 	// Data 值默认值
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> Data {
+	open func transform(_ decoder: SuperDecoder) throws -> Data {
 		return Data.defaultValue
 	}
 	
 	// URL 值默认值+容错
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> URL {
+	open func transform(_ decoder: SuperDecoder) throws -> URL {
 		guard !decoder.decodeNil() else { return URL.defaultValue }
 		
 		//string -> URL
@@ -276,7 +276,7 @@ open class Transformer: JSONTransformer {
 	
 	// Decimal 值默认值
 	@inline(__always)
-	open func transform(_ decoder: AlscDecoder) throws -> Decimal {
+	open func transform(_ decoder: SuperDecoder) throws -> Decimal {
 		return Decimal.defaultValue
 	}
 	
@@ -284,13 +284,13 @@ open class Transformer: JSONTransformer {
 	// MARK: Optional Type
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> Bool? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> Bool? {
 		guard !decoder.decodeNil() else { return Optional.defaultValue /*json 无值，走用户设置的默认值*/ }
 		return try? transform(decoder)
 	}
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> Int? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> Int? {
 		guard !decoder.decodeNil() else {
 			return Optional.defaultValue
 			/*json 无值，走用户设置的默认值*/ }
@@ -298,73 +298,73 @@ open class Transformer: JSONTransformer {
 	}
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> Int8? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> Int8? {
 		guard !decoder.decodeNil() else { return Optional.defaultValue /*json 无值，走用户设置的默认值*/ }
 		return try? transform(decoder)
 	}
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> Int16? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> Int16? {
 		guard !decoder.decodeNil() else { return Optional.defaultValue /*json 无值，走用户设置的默认值*/ }
 		return try? transform(decoder)
 	}
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> Int32? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> Int32? {
 		guard !decoder.decodeNil() else { return Optional.defaultValue /*json 无值，走用户设置的默认值*/ }
 		return try? transform(decoder)
 	}
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> Int64? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> Int64? {
 		guard !decoder.decodeNil() else { return Optional.defaultValue /*json 无值，走用户设置的默认值*/ }
 		return try? transform(decoder)
 	}
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> UInt? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> UInt? {
 		guard !decoder.decodeNil() else { return Optional.defaultValue /*json 无值，走用户设置的默认值*/ }
 		return try? transform(decoder)
 	}
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> UInt8? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> UInt8? {
 		guard !decoder.decodeNil() else { return Optional.defaultValue /*json 无值，走用户设置的默认值*/ }
 		return try? transform(decoder)
 	}
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> UInt16? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> UInt16? {
 		guard !decoder.decodeNil() else { return Optional.defaultValue /*json 无值，走用户设置的默认值*/ }
 		return try? transform(decoder)
 	}
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> UInt32? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> UInt32? {
 		guard !decoder.decodeNil() else { return Optional.defaultValue /*json 无值，走用户设置的默认值*/ }
 		return try? transform(decoder)
 	}
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> UInt64? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> UInt64? {
 		guard !decoder.decodeNil() else { return Optional.defaultValue /*json 无值，走用户设置的默认值*/ }
 		return try? transform(decoder)
 	}
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> Float? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> Float? {
 		guard !decoder.decodeNil() else { return Optional.defaultValue /*json 无值，走用户设置的默认值*/ }
 		return try? transform(decoder)
 	}
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> Double? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> Double? {
 		guard !decoder.decodeNil() else { return Optional.defaultValue /*json 无值，走用户设置的默认值*/ }
 		return try? transform(decoder)
 	}
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> String? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> String? {
 		guard !decoder.decodeNil() else { return Optional.defaultValue /*json 无值，走用户设置的默认值*/ }
 		
 		//json 有值，优先读取 json 里的值，并做类型容错处理
@@ -372,31 +372,31 @@ open class Transformer: JSONTransformer {
 	}
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> Date? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> Date? {
 		guard !decoder.decodeNil() else { return Optional.defaultValue /*json 无值，走用户设置的默认值*/ }
 		return try? transform(decoder)
 	}
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> Data? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> Data? {
 		guard !decoder.decodeNil() else { return Optional.defaultValue /*json 无值，走用户设置的默认值*/ }
 		return try? transform(decoder)
 	}
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> URL? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> URL? {
 		guard !decoder.decodeNil() else { return Optional.defaultValue /*json 无值，走用户设置的默认值*/ }
 		return try? transform(decoder)
 	}
 	
 	@inline(__always)
-	open func transformIfPresent(_ decoder: AlscDecoder) throws -> Decimal? {
+	open func transformIfPresent(_ decoder: SuperDecoder) throws -> Decimal? {
 		guard !decoder.decodeNil() else { return Optional.defaultValue /*json 无值，走用户设置的默认值*/ }
 		return try? transform(decoder)
 	}
 	
 	@inline(__always)
-	open func transformIfPresent<T: Decodable>(_ decoder: AlscDecoder) throws -> T? {
+	open func transformIfPresent<T: Decodable>(_ decoder: SuperDecoder) throws -> T? {
 		guard !decoder.decodeNil() else {
 			return _getDefaultValue(nil)
 			/*json 无值，走用户设置的默认值*/ }

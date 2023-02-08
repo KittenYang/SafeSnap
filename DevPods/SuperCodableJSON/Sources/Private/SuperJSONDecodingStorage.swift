@@ -1,6 +1,6 @@
 //
-//  AlscJSONDecodingStorage.swift
-//  AlscCodableJSON
+//  SuperJSONDecodingStorage.swift
+//  SuperCodableJSON
 //
 //  Created by KittenYang on 6/20/22
 //  Copyright (c) 2022 QITAO Network Technology Co., Ltd. All rights reserved.
@@ -9,7 +9,7 @@
 
 import Foundation
 
-struct AlscJSONDecodingStorage {
+struct SuperJSONDecodingStorage {
 	
 	/// The container stack.
 	/// Elements may be any one of the JSON types (NSNull, NSNumber, String, Array, [String : Any]).

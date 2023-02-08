@@ -30,7 +30,7 @@ def common_pod
   pod 'Refresh', :path => 'DevPods/Refresh'
   pod 'LanguageManagerSwiftUI', :path => 'DevPods/LanguageManagerSwiftUI'
   pod 'SheetKit', :path => 'DevPods/SheetKit'
-  pod 'AlscCodableJSON', :path => 'DevPods/AlscCodableJSON'
+  pod 'SuperCodableJSON', :path => 'DevPods/SuperCodableJSON'
   pod 'GnosisSafeKit', :path => 'DevPods/GnosisSafeKit'
   pod 'MultiSigKit', :path => 'DevPods/MultiSigKit'
   pod 'Introspect', :path => 'DevPods/Introspect'

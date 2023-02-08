@@ -1,6 +1,6 @@
 //
-//  _AlscJSONDecoder+Unbox.swift
-//  AlscCodableJSON
+//  _SuperJSONDecoder+Unbox.swift
+//  SuperCodableJSON
 //
 //  Created by KittenYang on 6/20/22
 //  Copyright (c) 2022 QITAO Network Technology Co., Ltd. All rights reserved.
@@ -9,7 +9,7 @@
 
 import Foundation
 
-extension _AlscJSONDecoder {
+extension _SuperJSONDecoder {
 	
 	/// Returns the given value unboxed from a container.
 	func unbox(_ value: Any, as type: Bool.Type) throws -> Bool? {
@@ -408,7 +408,7 @@ extension _AlscJSONDecoder {
 		let elementType = type.elementType
 		for (key, value) in dict {
 			let key = key as! String
-			self.codingPath.append(AlscJSONKey(stringValue: key, intValue: nil))
+			self.codingPath.append(SuperJSONKey(stringValue: key, intValue: nil))
 			defer { self.codingPath.removeLast() }
 			
 			result[key] = try unbox_(value, as: elementType)
@@ -435,7 +435,7 @@ extension _AlscJSONDecoder {
 		} else {
 			storage.push(container: value)
 			defer { storage.popContainer() }
-			if type is AlscCodable.Type {
+			if type is SuperCodable.Type {
 				// 开始 decode 新的嵌套类，从这里开始切换一个新的上下文容器
 				appendNewContextIfNeeded()
 			}

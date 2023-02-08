@@ -9,7 +9,6 @@
 
 import web3swift
 import BigInt
-import AlscCodableJSON
 
 extension ERC20 {
 	// 获取某个 block 的 erc20 balance
