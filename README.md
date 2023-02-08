@@ -1,6 +1,5 @@
 <img width="300" alt="logo" src="https://user-images.githubusercontent.com/5517281/217602093-c696dcd7-2717-49c8-b031-023289685b57.png">
 
-<!-- ![](https://user-images.githubusercontent.com/5517281/217332125-24213eb7-1964-43f4-87cc-e5f613048045.jpeg) -->
 # SafeSnap
 An open-sourced Web3 iOS Application which combines Gnosis Safe and Snapshot together makes you easily manage your DAOs on your pocket.
 
@@ -54,8 +53,14 @@ At first the idea was still for my own family service, then I found that there a
 Finally, I hope that blockchain is no longer only speculative things like coins and NFT digital collectibles, so that the day to influence the real world will come sooner and really ignite the potential of human collaboration.
 
 # Credit
+[Gnosis-Safe](https://github.com/safe-global/safe-contracts)
+
+[Snapshot Labs](https://github.com/snapshot-labs)
+
+<img width="18" alt="tw" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"> [@KittenYang](https://twitter.com/KittenYang)
 
 
 ## Tip Jar
 Open Source works will not be longer without your support.
-![](https://i.seadn.io/gae/_PL7VvNBC2eA_YMqswTazvjEN4Fw4WkSeyPFQtNEUzOn1o_AFVCeUY-bnG5FHd9p5Hvi-Jn8x9aNYgvOd9247lhnwFf-UTn7hddQ?auto=format&w=1000)[0x9D68df58C48ce745306757897bb8FaA3FE72A1BF](https://metamask.app.link/send/0x9D68df58C48ce745306757897bb8FaA3FE72A1BF)
+
+<img width="18" alt="eth" src="https://i.seadn.io/gae/_PL7VvNBC2eA_YMqswTazvjEN4Fw4WkSeyPFQtNEUzOn1o_AFVCeUY-bnG5FHd9p5Hvi-Jn8x9aNYgvOd9247lhnwFf-UTn7hddQ?auto=format"> [0x9D68df58C48ce745306757897bb8FaA3FE72A1BF](https://metamask.app.link/send/0x9D68df58C48ce745306757897bb8FaA3FE72A1BF)
