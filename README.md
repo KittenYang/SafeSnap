@@ -1,7 +1,15 @@
-![](https://user-images.githubusercontent.com/5517281/217332125-24213eb7-1964-43f4-87cc-e5f613048045.jpeg)
+<img width="300" alt="logo" src="https://user-images.githubusercontent.com/5517281/217602093-c696dcd7-2717-49c8-b031-023289685b57.png">
+
+<!-- ![](https://user-images.githubusercontent.com/5517281/217332125-24213eb7-1964-43f4-87cc-e5f613048045.jpeg) -->
 # SafeSnap
 An open-sourced Web3 iOS Application which combines Gnosis Safe and Snapshot together makes you easily manage your DAOs on your pocket.
 
+# Snapshot
+<img width="300" alt="logo" src=https://user-images.githubusercontent.com/5517281/217602637-0d8c8c28-df41-4219-89a8-b695ae3392e4.JPG><img width="300" alt="logo" src=https://user-images.githubusercontent.com/5517281/217602597-10922aad-da6c-4618-80a6-4f483de53469.JPG>
+
+<img width="700" alt="logo" src=https://user-images.githubusercontent.com/5517281/217602656-80656cb4-ba8f-4e8f-a785-659e0977f8a4.JPG>
+
+<img width="700" alt="logo" src=https://user-images.githubusercontent.com/5517281/217602667-e56e1d67-e10d-4041-a409-6af9d77232b7.JPG>
 
 
 ## Preface
@@ -103,4 +111,5 @@ DAO 的另一个重要组成便是如何消费货币。对于大多数没有金�
 起初这个想法还是为了自己家庭服务的，后来发现市面上对这两个产品有需求的不在少数，并且都没有一个整合起来的移动端，因此有了对外发布的想法，当然必然是开放源代码的，毕竟我也是从开源项目中来的。
 
 最后的最后，希望区块链不再只有炒币、数字藏品这些投机的东西了，让影响现实世界的那一天早点到来，真正点燃人类协作的潜力。
+
 
