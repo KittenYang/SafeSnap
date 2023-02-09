@@ -1,6 +1,7 @@
-<img width="300" alt="logo" src="https://user-images.githubusercontent.com/5517281/217602093-c696dcd7-2717-49c8-b031-023289685b57.png">
+<p align="center">
+<img width="300" alt="logo" src="https://user-images.githubusercontent.com/5517281/217730515-aaaa01f4-082b-4ebd-bf69-0156946d6d28.png">
+</p>
 
-<!-- ![](https://user-images.githubusercontent.com/5517281/217332125-24213eb7-1964-43f4-87cc-e5f613048045.jpeg) -->
 # SafeSnap
 An open-sourced Web3 iOS Application which combines Gnosis Safe and Snapshot together makes you easily manage your DAOs on your pocket.
 
@@ -12,7 +13,16 @@ An open-sourced Web3 iOS Application which combines Gnosis Safe and Snapshot tog
 <img width="700" alt="logo" src=https://user-images.githubusercontent.com/5517281/217602667-e56e1d67-e10d-4041-a409-6af9d77232b7.JPG>
 
 
+## <img width="28" alt="logo" src=https://user-images.githubusercontent.com/23297747/40148910-112c56d4-5936-11e8-95df-aa9796b33bf3.png> GitCoin
+
+[GitCoin - SafeSnap](https://grantshub.gitcoin.co/#/chains/1/registry/0x03506eD3f57892C85DB20C36846e9c808aFe9ef4/projects/273)
+
+<img width="358" alt="截屏2023-02-09 13 50 02" src="https://user-images.githubusercontent.com/5517281/217729551-ad4c92d5-6c44-4f1f-a007-a8b1019808f9.png">
+
+
 ## Preface
+[中文介绍](/README-CN.md)
+
 In the past few years of the Web3 wave, a large number of so-called Web3 on-chain applications have emerged, covering various tracks. I am personally very optimistic about the DAO track. Not only does it make great use of the features of blockchain, but more importantly, it will reconfigure the paradigm of human social collaboration. If blockchain is a technological revolution, then DAO is more like a social revolution, although it is just the beginning of the story, and it will take a long time to really achieve this goal.
 
 I also experienced the power of the DAO model in the real world during the Covid-19 blockade in Shanghai in the first half of 2022. At that time, the community was completely locked down, and the online supplies were almost sold out, so people had to rely on the community building managers who had channels to purchase supplies. Everyone spontaneously divided the work in the community group, procurement of procurement, handling of handling, online Q&A ..... The first feeling I had was that this was like a popular Web3 project, and the way Web3 projects work is that the more you contribute to the community in the early days, the more project pitches you can get, including but not limited to Token or NFT, so you can cash in on the market when the project is on fire. Essentially it is the same thing as starting a business and getting original shares. Some say it's speculative and a waste of time, but how is it not in the real world? Get a good relationship with your superiors, work hard to make money, and work hard to recharge and learn, not all for various benefits, as long as you don't go to the pits. So the underlying logic is fine: the earlier someone contributes to the community, the more lucrative the reward should be, it's just that blockchain has made the process lower barrier, programmatic, and provable on-chain. There are also benefits for the project, as having a group of wholehearted fans to build together early on also provides more possibilities for subsequent development.
@@ -54,8 +64,15 @@ At first the idea was still for my own family service, then I found that there a
 Finally, I hope that blockchain is no longer only speculative things like coins and NFT digital collectibles, so that the day to influence the real world will come sooner and really ignite the potential of human collaboration.
 
 # Credit
+[Gnosis-Safe](https://github.com/safe-global/safe-contracts)
+
+[Snapshot Labs](https://github.com/snapshot-labs)
+
+<img width="18" alt="tw" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"> [@KittenYang](https://twitter.com/KittenYang)
 
 
 ## Tip Jar
 Open Source works will not be longer without your support.
-![](https://i.seadn.io/gae/_PL7VvNBC2eA_YMqswTazvjEN4Fw4WkSeyPFQtNEUzOn1o_AFVCeUY-bnG5FHd9p5Hvi-Jn8x9aNYgvOd9247lhnwFf-UTn7hddQ?auto=format&w=1000)[0x9D68df58C48ce745306757897bb8FaA3FE72A1BF](https://metamask.app.link/send/0x9D68df58C48ce745306757897bb8FaA3FE72A1BF)
+
+<img width="18" alt="eth" src="https://i.seadn.io/gae/_PL7VvNBC2eA_YMqswTazvjEN4Fw4WkSeyPFQtNEUzOn1o_AFVCeUY-bnG5FHd9p5Hvi-Jn8x9aNYgvOd9247lhnwFf-UTn7hddQ?auto=format"> [0x9D68df58C48ce745306757897bb8FaA3FE72A1BF](https://metamask.app.link/send/0x9D68df58C48ce745306757897bb8FaA3FE72A1BF)
+
