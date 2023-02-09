@@ -1,4 +1,6 @@
-<img width="300" alt="logo" src="https://user-images.githubusercontent.com/5517281/217602093-c696dcd7-2717-49c8-b031-023289685b57.png">
+<p align="center">
+<img width="300" alt="logo" src="https://user-images.githubusercontent.com/5517281/217730515-aaaa01f4-082b-4ebd-bf69-0156946d6d28.png">
+</p>
 
 # SafeSnap
 An open-sourced Web3 iOS Application which combines Gnosis Safe and Snapshot together makes you easily manage your DAOs on your pocket.
@@ -9,6 +11,13 @@ An open-sourced Web3 iOS Application which combines Gnosis Safe and Snapshot tog
 <img width="700" alt="logo" src=https://user-images.githubusercontent.com/5517281/217602656-80656cb4-ba8f-4e8f-a785-659e0977f8a4.JPG>
 
 <img width="700" alt="logo" src=https://user-images.githubusercontent.com/5517281/217602667-e56e1d67-e10d-4041-a409-6af9d77232b7.JPG>
+
+
+## <img width="28" alt="logo" src=https://user-images.githubusercontent.com/23297747/40148910-112c56d4-5936-11e8-95df-aa9796b33bf3.png> GitCoin
+
+[GitCoin - SafeSnap](https://grantshub.gitcoin.co/#/chains/1/registry/0x03506eD3f57892C85DB20C36846e9c808aFe9ef4/projects/273)
+
+<img width="358" alt="截屏2023-02-09 13 50 02" src="https://user-images.githubusercontent.com/5517281/217729551-ad4c92d5-6c44-4f1f-a007-a8b1019808f9.png">
 
 
 ## Preface
@@ -66,3 +75,4 @@ Finally, I hope that blockchain is no longer only speculative things like coins 
 Open Source works will not be longer without your support.
 
 <img width="18" alt="eth" src="https://i.seadn.io/gae/_PL7VvNBC2eA_YMqswTazvjEN4Fw4WkSeyPFQtNEUzOn1o_AFVCeUY-bnG5FHd9p5Hvi-Jn8x9aNYgvOd9247lhnwFf-UTn7hddQ?auto=format"> [0x9D68df58C48ce745306757897bb8FaA3FE72A1BF](https://metamask.app.link/send/0x9D68df58C48ce745306757897bb8FaA3FE72A1BF)
+
