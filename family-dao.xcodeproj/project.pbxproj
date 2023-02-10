@@ -114,6 +114,7 @@
 		33FE5FC528BD0215007176DF /* DetailCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE5FC428BD0215007176DF /* DetailCellView.swift */; };
 		3F91DBE553390454CD9A316A /* Pods_family_daoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2287371F089B9F7C8F45ED /* Pods_family_daoTests.framework */; };
 		5F415286298FFA97000A12B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F415285298FFA97000A12B7 /* LaunchScreen.storyboard */; };
+		5F61D59F2996B25600A9D33A /* TermsAndPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F61D59E2996B25600A9D33A /* TermsAndPrivacyView.swift */; };
 		958F69526AD1ACA23B34F201 /* Pods_family_dao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178516414528FE9137BAC901 /* Pods_family_dao.framework */; };
 /* End PBXBuildFile section */
 
@@ -265,6 +266,7 @@
 		4D2287371F089B9F7C8F45ED /* Pods_family_daoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_family_daoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58BDF4C071DAB24341CEAD44 /* Pods_family_daoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_family_daoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F415285298FFA97000A12B7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F61D59E2996B25600A9D33A /* TermsAndPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndPrivacyView.swift; sourceTree = "<group>"; };
 		9DAC752D877E0763CF2E6BCC /* Pods-family-dao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-family-dao.release.xcconfig"; path = "Target Support Files/Pods-family-dao/Pods-family-dao.release.xcconfig"; sourceTree = "<group>"; };
 		BFDD03A45E21C31A8613F5BD /* Pods-family-daoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-family-daoTests.debug.xcconfig"; path = "Target Support Files/Pods-family-daoTests/Pods-family-daoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D5D3A9A7CC4129286EC0938B /* Pods-family-daoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-family-daoTests.release.xcconfig"; path = "Target Support Files/Pods-family-daoTests/Pods-family-daoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -509,6 +511,7 @@
 			isa = PBXGroup;
 			children = (
 				33AC6A252958355A005104C0 /* SettingView.swift */,
+				5F61D59E2996B25600A9D33A /* TermsAndPrivacyView.swift */,
 				33AC6A272958981C005104C0 /* ChangeNameView.swift */,
 				33F6499E296322DF0045664D /* ChangeSafeThreholdView.swift */,
 				33721DD12969CCBB00BEEDF1 /* ChangeNickNameView.swift */,
@@ -1029,6 +1032,7 @@
 				3378B09328DCD3E900F35C11 /* CreateNewTaskView.swift in Sources */,
 				337F225B28D8BF2900DEA542 /* TabBarVisibility.swift in Sources */,
 				33AC6A2A2958AC5A005104C0 /* App+.swift in Sources */,
+				5F61D59F2996B25600A9D33A /* TermsAndPrivacyView.swift in Sources */,
 				331D02B42932864800A4FFA9 /* ImportUserFromMemo.swift in Sources */,
 				33AF15A2286826070040744C /* family_daoApp.swift in Sources */,
 				3305E9E3297D40A2007E9B7C /* Defaults.swift in Sources */,
@@ -1246,7 +1250,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "family-dao/family-dao.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"family-dao/Preview Content\"";
 				DEVELOPMENT_TEAM = R78WMUBTG5;
 				ENABLE_PREVIEWS = YES;
@@ -1287,7 +1291,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "family-dao/family-dao.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"family-dao/Preview Content\"";
 				DEVELOPMENT_TEAM = R78WMUBTG5;
 				ENABLE_PREVIEWS = YES;

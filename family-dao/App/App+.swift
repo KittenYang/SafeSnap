@@ -43,7 +43,7 @@ public extension UIApplication {
 	}()
 	
 	static func versionHeaderText() -> NSAttributedString {
-		let name = NSAttributedString(string: "Design and Develop by KittenYang", attributes: [NSAttributedString.Key.font: UIFont(name: "Savoye Let", size: 12.0)!])
+		let name = NSAttributedString(string: "Designed by JiaoJiaoMiao", attributes: [NSAttributedString.Key.font: UIFont(name: "Savoye Let", size: 12.0)!])
 
 		let version = NSAttributedString(string: "\(UIApplication.versionWithBuildString)\n", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14.0)])
 		let final = NSMutableAttributedString(attributedString: version)

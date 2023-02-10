@@ -72,7 +72,20 @@ struct SettingView: View {
 					AppHUD.show("copy_suss".appLocalizable)
 				   }))
 //				,.init(icon: .init(named: "discord_icon"), text: "Discord", subText: "", rightIcon: nil)
-//				,.init(emoji: "🫶", text: "settings_help".appLocalizable, subText: "", rightIcon: nil)
+                ,.init(icon:.init(named: "gnosis_safe_logo"), text: "About Gnosis Safe", subText: nil, rightIcon: nil, action: TaggedClosure(id: "gnosis_safe_about_url_cell", closure: {
+                    if let url = URL(string: "https://safe.global/#getting-started") {
+                        NavigationStackPathManager.shared.showSheetModel = .init(presented: true, sheetContent: .init({
+                            AnyView(SafariView(url:url))
+                        }))
+                    }
+                }))
+                ,.init(icon:.init(named: "snapshot_logo"), text: "About Snapshot", subText: nil, rightIcon: nil, action: TaggedClosure(id: "snapshot_about_url_cell", closure: {
+                    if let url = URL(string: "https://snapshot.org/#/about") {
+                        NavigationStackPathManager.shared.showSheetModel = .init(presented: true, sheetContent: .init({
+                            AnyView(SafariView(url:url))
+                        }))
+                    }
+                }))
 			])
 //			,Pair("", [.init(emoji: "📖", text: "settings_help_about".appLocalizable, subText: "", rightIcon: nil)])
 		].filter({ !$0.two.isEmpty })
@@ -240,12 +253,16 @@ struct SettingView: View {
 	@ViewBuilder
 	private func footer(_ isLast: Bool) -> some View {
 		if isLast {
-			HStack {
-				Spacer()
-				Text(AttributedString(UIApplication.versionHeaderText()))
-					.multilineTextAlignment(.center)
-				Spacer()
-			}.padding()
+            VStack(spacing: 1.0) {
+                HStack {
+                    Spacer()
+                    Text(AttributedString(UIApplication.versionHeaderText()))
+                        .multilineTextAlignment(.center)
+                    Spacer()
+                }.padding()
+                TermsAndPrivacyView()
+            }
+            .foregroundColor(.appGray9E)
 		}
 	}
 	
