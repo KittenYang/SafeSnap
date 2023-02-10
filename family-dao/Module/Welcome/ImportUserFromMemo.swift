@@ -149,7 +149,7 @@ struct ImportUserFromMemo: View, InputCheckable {
 						}
 						DispatchQueue.main.async {
 							WalletManager.shared.currentWallet = wallet
-							NavigationStackPathManager.shared.showSheetModel.presented = false
+							NavigationStackPathManager.dismissSheetVC()
 							AppHUD.dismissAll()
 						}
 					} else {

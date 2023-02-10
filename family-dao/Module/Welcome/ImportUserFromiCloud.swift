@@ -138,7 +138,7 @@ struct ImportUserFromiCloud: View {
 					DispatchQueue.main.async {
 						AppHUD.dismissAll()
 						WalletManager.shared.currentWallet = wallet
-						NavigationStackPathManager.shared.showSheetModel.presented = false
+                        NavigationStackPathManager.dismissSheetVC()
 					}
 				}
 			}

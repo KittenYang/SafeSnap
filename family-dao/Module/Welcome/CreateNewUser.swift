@@ -76,7 +76,7 @@ struct CreateNewUser: View, InputCheckable {
 				Button("sdfas_ssfsnew_home_name_perospn".appLocalizable, role: .destructive, action: {
 					alert = false
 					WalletManager.logOutWallet()
-					NavigationStackPathManager.shared.showSheetModel.presented = false
+                    NavigationStackPathManager.dismissSheetVC()
 				})
 			}, message: {
 				Text("fasfasfsn_sdsfsa_sew_home_name_perospn".appLocalizable)

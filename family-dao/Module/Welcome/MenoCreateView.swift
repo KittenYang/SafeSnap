@@ -133,6 +133,7 @@ struct MenoCreateView: View {
 extension MenoCreateView {
 	private func saveMeno() {
 		guard let mnemonics = self.wallet?.mnemonics, let name = self.walletName else {
+            AppHUD.show("Sorry,something wrong.\(self.wallet?.mnemonics),\(self.walletName)")
 			return
 		}
 	
@@ -141,8 +142,10 @@ extension MenoCreateView {
 
 		KeychainManager.saveMnemonics(name: name, mnemonics: mnemonics)
 
-		DispatchQueue.main.async {
-			NavigationStackPathManager.shared.showSheetModel.presented = false
+        
+        DispatchQueue.main.async {
+            NavigationStackPathManager.dismissSheetVC()
+            AppHUD.show("✅ iCloud Saved!")
 		}
 	}
 }
