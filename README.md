@@ -12,8 +12,12 @@ An open-sourced Web3 iOS Application which combines Gnosis Safe and Snapshot tog
 
 <img width="700" alt="logo" src=https://user-images.githubusercontent.com/5517281/217602667-e56e1d67-e10d-4041-a409-6af9d77232b7.JPG>
 
+## <img width="28" alt="logo" src=https://upload.wikimedia.org/wikipedia/fr/archive/b/bc/20210310082855%21TestFlight-icon.png> Testflight
 
-## <img width="28" alt="logo" src=https://user-images.githubusercontent.com/23297747/40148910-112c56d4-5936-11e8-95df-aa9796b33bf3.png> GitCoin
+https://testflight.apple.com/join/yYciI6d2
+
+
+## <img width="20" alt="logo" src=https://user-images.githubusercontent.com/23297747/40148910-112c56d4-5936-11e8-95df-aa9796b33bf3.png> GitCoin
 
 [GitCoin - SafeSnap](https://grantshub.gitcoin.co/#/chains/1/registry/0x03506eD3f57892C85DB20C36846e9c808aFe9ef4/projects/273)
 
