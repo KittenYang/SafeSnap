@@ -23,6 +23,9 @@ https://testflight.apple.com/join/yYciI6d2
 
 <img width="358" alt="截屏2023-02-09 13 50 02" src="https://user-images.githubusercontent.com/5517281/217729551-ad4c92d5-6c44-4f1f-a007-a8b1019808f9.png">
 
+## How to use 使用指南
+
+https://mirror.xyz/kittenyang.eth/nvp9pm9KsHM-wnEbtIvetmng03ixUf5vFTguKrFMZDs
 
 ## Preface
 [中文介绍](/README-CN.md)
